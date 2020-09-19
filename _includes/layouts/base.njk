@@ -47,6 +47,7 @@
     {% if googleanalytics %}
     <script async defer src="{{ "/js/cached.js" | addHash }}"></script>
     {% endif %}
+    <script async defer src="{{ "/js/pwa.js" | addHash }}"></script>
     <link rel="manifest" href="/manifest.json" />
     <!-- Notably iOS UAs also contain Mac OS X -->
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
@@ -90,16 +91,6 @@
 
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
-      <script>
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(function() {
-              console.log("ServiceWorker has been registered!");
-            })
-            .catch(console.error);
-        }
-      </script>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
