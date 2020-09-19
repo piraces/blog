@@ -17,7 +17,7 @@ I'm constantly learning new languages and creating my own personal projects. Bes
 
 And...
 
-[Take a look at some of my projects](https://pirac.es)
+<a href="/developments/">Take a look at some of my projects</a>
 
 
 ## Social Networks
