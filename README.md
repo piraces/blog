@@ -1,5 +1,8 @@
 # piraces.dev Blog
 
+[![Build Status](https://travis-ci.com/piraces/blog.svg?branch=main)](https://travis-ci.com/piraces/blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce027d3f-e391-4e7a-879b-0ea5dab3c416/deploy-status)](https://app.netlify.com/sites/piracesdev/deploys)
+
 Blog for piraces.dev, made with the [Eleventy static site generator](https://www.11ty.dev/) implementing a wide range of performance best practices (using the template [google/eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog)).
 
 Based on the awesome [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
