@@ -1,25 +1,25 @@
 {
-  "title": "Title of the website. Update me.",
-  "url": "https://update-me.com",
-  "domain": "update-me.com",
-  "description": "Description of the website. Update me.",
-  "genre": "Insert a schema.org genre",
-  "googleAnalyticsId": "GA ID. Update me",
+  "title": "Piraces Blog",
+  "url": "https://piraces.dev",
+  "domain": "piraces.dev",
+  "description": "Personal blog about Software development and tech related things",
+  "genre": "Software Engineering",
+  "googleAnalyticsId": "UA-136840526-1",
   "feed": {
-    "subtitle": "Subtitle. Update me.",
+    "subtitle": "Personal blog about Software development and tech related things",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://update-me.com"
+    "id": "https://piraces.dev"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://update-me.com/feed/feed.json"
+    "url": "https://piraces.dev/feed/feed.json"
   },
   "author": {
-    "name": "Author Name. Update me.",
-    "twitterHandle": "update_me"
+    "name": "Raúl Piracés",
+    "twitterHandle": "piraces_"
   },
   "publisher": {
-    "name": "Publisher name. Update me."
+    "name": "Raúl Piracés"
   }
 }
