@@ -23,7 +23,7 @@ It is present in several open-source and private projects as the base of its inf
 
 The world of Kubernetes can be sometimes very complex and if we make use of it, we need to ensure we are doing it right.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">One time I tried to explain Kubernetes to someone.<br>Then we both didn&#39;t understand it.</p>&mdash; SwiftOnSecurity (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/1158764816426840064?ref_src=twsrc%5Etfw">August 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">One time I tried to explain Kubernetes to someone.<br>Then we both didn&#39;t understand it.</p>&mdash; SwiftOnSecurity (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/1158764816426840064?ref_src=twsrc%5Etfw">August 6, 2019</a></blockquote>
 
 There are lots of tools that can ease that work for us to simplify the process to get Kubernetes working correctly as our platform.
 
