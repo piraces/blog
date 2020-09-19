@@ -33,7 +33,10 @@ Nowadays with the [Open Source initiative](https://opensource.org/), the majorit
 
 This projects usually manage their releases using GitHub releases, so we can use the built-in GitHub notifications to get notified on every release of the projects we want to track in a very simple way (just tap on watch and select releases):
 
+<div align="center">
+
 ![Watch releases in a GitHub project](../../img/posts/notifications-new-releases-tech-stack/github_releases_notifications.png)
+</div>
 
 This way new releases will appear in our feed of notifications in our profile of GitHub. Depending in our notifications configuration, we can achieve to get this notifications in our mail too.
 
@@ -57,7 +60,10 @@ For example:
 Knowing this, we can use our favorite RSS reader/client to group RSS feeds of different releases and use it to read and be notified for the latest releases.
 In my case, I use [Feedly](https://feedly.com/), to make a feed and group different sources naming and organizing them:
 
+<div align="center">
+
 ![Feedly feed of different GitHub releases](../../img/posts/notifications-new-releases-tech-stack/feedly_github_releases_notifications.png)
+</div>
 
 In this way, I personally check the feed every day if new releases have been published or if some versions have went out of preview to an stable version.
 Also note, that **it's always important to check the changelog** usually provided with each release, before attempting to use the last version (there could be breaking changes or deprecated functionalities you'll need to manage).
@@ -67,7 +73,10 @@ Also note, that **it's always important to check the changelog** usually provide
 There could be some projects that are not open sourced, or using another Version Control platform like [GitLab](https://gitlab.com/).
 In the case of GitLab, we can subscribe to release notifications like GitHub and manage them to get the notifications in our mail easily as explained with GitHub above:
 
+<div align="center">
+
 ![Watch releases in a GitLab project](../../img/posts/notifications-new-releases-tech-stack/gitlab_releases_notifications.png)
+</div>
 
 **What if a project is not open sourced or not in any of the mentioned platforms?**
 
@@ -77,7 +86,10 @@ In this case, to make all notifications came to the same place we could use some
 
 Some tools like [IFTTT](https://ifttt.com/), provides us simple yet powerful workflows to automate this kind of things. For example, we can set up a workflow to get new releases information from a blog (via RSS) to our mail:
 
+<div align="center">
+
 ![IFTTT Automation](../../img/posts/notifications-new-releases-tech-stack/ifttt_automation.png)
+</div>
 
 Other options could be to watch a Twitter account and send it to our mail, set up an RSS feed of a Twitter account updates which contains certain words (like "release"), and other workflows you could imagine.
 

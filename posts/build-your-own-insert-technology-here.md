@@ -9,8 +9,10 @@ tags:
 layout: layouts/post.njk
 ---
 
+<div align="center">
 
 ![Build your own](../../img/posts/build-your-own-insert-technology-here/Richard_Feynman.png)
+</div>
 
 Hello, I just want to show the community this awesome repo that consists in a series of different tutorials about how to build your own database, git, network stack, shell, docker... and many more!
 

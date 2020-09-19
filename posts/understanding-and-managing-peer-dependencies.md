@@ -10,8 +10,10 @@ tags:
 layout: layouts/post.njk
 ---
 
-![Cover image](../../img/posts/understanding-and-managing-peer-dependencies/peerDependencies.png)
+<div align="center">
 
+![Cover image](../../img/posts/understanding-and-managing-peer-dependencies/peerDependencies.png)
+</div>
 
 **Have you ever seen any similar warning to the ones in the image above?**
 

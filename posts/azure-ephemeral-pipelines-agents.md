@@ -49,7 +49,11 @@ Only three steps/requirements:
 
 So considering we have setup a docker image that can run a deploy agent in a container, our pipeline will look like this:
 
+<div align="center">
+
 ![Example pipeline with ephemeral agents](../../img/posts/azure-ephemeral-pipelines-agents/release_sample.png)
+
+</div>
 <div align="center"><em>Example pipeline with ephemeral agents</em></div>
 
 As you can see, two jobs are needed:
@@ -77,15 +81,24 @@ For this tutorial I have created two resource groups:
 * One for the virtual network and the security group.
 * Another one for the Azure Container Registry (ACR) and the storage we will deploy to.
 
+<div align="center">
+
 ![Resource group for vnet and security group](../../img/posts/azure-ephemeral-pipelines-agents/azure_sample_vnet.png)
+
+</div>
 <div align="center"><em>Resource group for the VNet and security group</em></div>
+<div align="center">
 
 ![Resource group for ACR and Storage account](../../img/posts/azure-ephemeral-pipelines-agents/azure_resource_group_sample.png)
+</div>
 <div align="center"><em>Resource group for the ACR and Storage account</em></div>
 
 Also, the Azure Storage account should be in the private network, with a configuration similar to this one:
 
+<div align="center">
+
 ![Azure Storage Account VNet configuration](../../img/posts/azure-ephemeral-pipelines-agents/vnet_storage_account.png)
+</div>
 <div align="center"><em>Azure Storage Account VNet configuration</em></div>
 
 If you need it, the main repo of ephemeral agents has [sample scripts](https://github.com/microsoft/azure-pipelines-ephemeral-agents/tree/master/Samples) on how to deploy these resources.
@@ -97,7 +110,10 @@ In this case I have used the [Agent Images available in the GitHub repo](https:/
 
 After that, we should have one repository with one image in our ACR:
 
+<div align="center">
+
 ![ACR with Agent Image](../../img/posts/azure-ephemeral-pipelines-agents/azure_acr_agent_image.png)
+</div>
 <div align="center"><em>ACR with sample Agent Image based on Ubuntu</em></div>
 
 ## Setting up the pipeline in Azure DevOps
@@ -124,7 +140,10 @@ If using the OAuth token, you need to met the following conditions:
 
 In this example, permissions on the pool (for the OAuth token approach) will look like the following:
 
+<div align="center">
+
 ![Pool permissions for OAuth token](../../img/posts/azure-ephemeral-pipelines-agents/pool_permissions.png)
+</div>
 <div align="center"><em>Pool permissions for OAuth token</em></div>
 
 
@@ -147,31 +166,46 @@ Also, as mentioned above we will need an ACR Service Connection to our ACR to ru
 
 In this part of the process two pipelines are created for my sample project, one for creating the base image for the agents in the ACR (which we have previously created), and another one for the main deploy process of our project.
 
+<div align="center">
+
 ![Two main pipelines defined](../../img/posts/azure-ephemeral-pipelines-agents/two_pipelines.png)
+</div>
 <div align="center"><em>Pipelines defined in our projects</em></div>
 
 The main deploy pipeline used in this tutorial is the same defined in the [GitHub repo sample](https://github.com/microsoft/azure-pipelines-ephemeral-agents/blob/master/Samples/storage-pipeline/Azure-pipelines.yml). As we have seen in the previous stages, we have to define two jobs: one to provision the agent and another one to perform the deploy job.
 
 Configure the variables in the sample pipeline to reference your resources correctly and then try to run it:
 
+<div align="center">
+
 ![Pipeline preparing the agent in the first job](../../img/posts/azure-ephemeral-pipelines-agents/pipeline_running_prepare_agent.png)
+</div>
 <div align="center"><em>Pipeline preparing the agent in the first job</em></div>
 
 If we have configured everything correctly, the pipeline will succeed:
 
+<div align="center">
+
 ![Final pipeline result](../../img/posts/azure-ephemeral-pipelines-agents/final_pipeline_result.png)
+</div>
 <div align="center"><em>Final pipeline result</em></div>
 
 If we inspect our created agent pool, we will see the executed job but no agents registered in the pool (which is the main purpose of this process). This is because the agent has unregistered itself when the deployment job finished.
 
+<div align="center">
+
 ![Pool executed job](../../img/posts/azure-ephemeral-pipelines-agents/pool_results.png)
+</div>
 <div align="center"><em>Pool executed job</em></div>
 
 ### Final result:
 
 After the deploy pipeline execution, we can check how we successfully have deployed our assets to the Azure Storage container connected to the private virtual network:
 
+<div align="center">
+
 ![Deployed assets on Azure Storage container inside the VNet](../../img/posts/azure-ephemeral-pipelines-agents/azure_final_result_container.png)
+</div>
 <div align="center"><em>Deployed assets on Azure Storage container inside the VNet</em></div>
 
 ## Conclusion

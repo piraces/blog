@@ -14,7 +14,10 @@ tags:
 layout: layouts/post.njk
 ---
 
+<div align="center">
+
 ![Cover image](../../img/posts/your-custom-remote-development-environment/VSCode_Screenshot.jpg)
+</div>
 
 ## Introduction 
 

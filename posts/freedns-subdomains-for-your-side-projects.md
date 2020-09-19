@@ -9,14 +9,21 @@ tags:
   - sideprojects
 layout: layouts/post.njk
 ---
+<div align="center">
 
 ![Cover image](../../img/posts/freedns-subdomains-for-your-side-projects-demos-aliases/Side_Project_Ideas.png)
+</div>
 
 In my daily life, besides working as a Software developer, I'm always interested into launching new personal/side-projects. I launch simple webs, tools, try new technologies or make utilities for myself.
 
 But how to make this projects available on the public internet?
+<div align="center">
+
 ![Dynamic IPs for public projects?](../../img/posts/freedns-subdomains-for-your-side-projects-demos-aliases/Pulp_Fiction_Internet.gif)
-<figcaption>Dynamic IPs for public projects?</figcaption>
+</div>
+<div align="center">
+Dynamic IPs for public projects?
+</div>
 
 In order to make that developments accesible anywhere I usually go and use [No-IP](https://www.noip.com/) services, which allows a single user to register three subdomains which can be dynamically updated if we don't have a static IP (DDNS). This has been specially useful for me when looking to expose an app deployed in my local network (home), normally on a Raspberry Pi.
 
@@ -26,8 +33,13 @@ Currently they have a pool of **61,949 domains** some of them working for more t
 
 They offer a *premium* account which offers more than 50 subdomains and "extra configuration". But a standard account allows you to create 5 subdomains in [shared domains](https://freedns.afraid.org/domain/registry/) which I find more than useful for publishing my projects.
 
+<div align="center">
+
 ![Lots of subdomains...](../../img/posts/freedns-subdomains-for-your-side-projects-demos-aliases/FreeDNS_Domain_List.png)
-<figcaption>Lots of subdomains in their registry...</figcaption>
+</div>
+<div align="center">
+Lots of subdomains in their registry...
+</div>
 
 
 If you want, you can read the [FAQs](https://freedns.afraid.org/faq/) of the service in order to view all possibilities.

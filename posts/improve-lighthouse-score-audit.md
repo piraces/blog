@@ -10,8 +10,10 @@ tags:
   - learning
 layout: layouts/post.njk
 ---
+<div align="center">
 
 ![Final result on LightHouse](../../img/posts/improve-lighthouse-score-audit/LightHouse_100.png)
+</div>
 
 Half a year ago, I started this blog project in an attempt to learn new things, write them, and hopefully provide some people with great content.
 
@@ -21,7 +23,10 @@ Gatsby is lightning fast since it generates only static content to serve and com
 
 Nevertheless, when I first ran an audit to my new blog using [Lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=en), this was my initial score:
 
+<div align="center">
+
 ![Initial result from starter theme](../../img/posts/improve-lighthouse-score-audit/Initial_LightHouse.png)
+</div>
 
 It is a great result to start with, but I felt I could do more, get reported issues fixed and get to the maximum score. It was a challenge for me where I could get more knowledge about web best practices (and also new concepts).
 
@@ -29,7 +34,10 @@ I got started looking carefully to every section of the report and improving eac
 
 ## Performance
 
+<div align="center">
+
 ![Details on performance by Lighthouse tool](../../img/posts/improve-lighthouse-score-audit/LightHouse_Performance.png)
+</div>
 
 Performance was one of the worst scores reported by the tool... the first contentful paint ([FCP](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint)) was not great, time to first interaction could be improved, images were not optimized and Javascript execution got several seconds to finish (and it's a very simple site).
 
@@ -77,7 +85,10 @@ Gatsby offers great resources for implementing a PWA and met the three criteria 
 
 ## Conclusion
 
+<div align="center">
+
 ![The final prize](../../img/posts/improve-lighthouse-score-audit/LightHouse_100.png)
+</div>
 
 I have learned a lot about web best practices along the way. Knowledge that I will apply in further web developments, that could make my web faster, more accesible and better in general.
 
