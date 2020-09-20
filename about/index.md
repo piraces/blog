@@ -19,6 +19,10 @@ And...
 
 <a href="/developments/">Take a look at some of my projects</a>
 
+Or...
+
+<a href="/labs/">See some experiments I have done 😃 (just for fun)</a>
+
 
 ## Social Networks
 

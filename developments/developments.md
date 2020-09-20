@@ -7,6 +7,8 @@ eleventyNavigation:
   order: 4
 ---
 
+* [ kube-score check ](#kube-score-check)
+
 * [ developer.li ](#developerli)
 
 * [ WTransfer ](#wtransfer)
@@ -34,6 +36,19 @@ eleventyNavigation:
 * [ WallaLinks! ](#wallaLinks)
 
 * [ WallaPet ](#wallapet)
+
+
+-----------
+
+## kube-score check
+
+**Performing static code analysis of your Kubernetes object definitions with a Github Action**
+
+![kube-score check](../img/developments/kube-score-check.png)
+
+GitHub Action that executes [kube-score](https://kube-score.com/) with selected manifests (with support for YAML, Helm or Kustomize manifests).
+
+[View project](https://github.com/marketplace/actions/kube-score-check)
 
 -----------
 
