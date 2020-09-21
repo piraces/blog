@@ -61,7 +61,7 @@
     "purge-from-html": "^1.0.3",
     "purgecss": "^2.3.0",
     "rollup": "^2.27.1",
-    "sharp": "^0.26.0",
+    "sharp": "^0.26.1",
     "twitter": "^1.7.1"
   }
 }
