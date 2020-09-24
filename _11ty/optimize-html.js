@@ -76,7 +76,7 @@ const purifyCss = async (rawContent, outputPath) => {
     const after = csso.minify(purged[0].css).css;
     //console.log("CSS reduction", before.length - after.length);
 
-    content = content.replace("</footer>", `<style>${after}</style></footer>`);
+    content = content.replace("</footer>", `<style id="main-css" media="print">${after}</style><script async csp-hash>document.getElementById('main-css').media='all'</script></footer>`);
   }
   return content;
 };
