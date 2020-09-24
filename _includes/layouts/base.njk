@@ -53,7 +53,6 @@
     <!-- Notably iOS UAs also contain Mac OS X -->
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
-    <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
     <header>
@@ -92,6 +91,7 @@
 
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
+      <!-- css is inserted by optimize-html custom plugin -->
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
