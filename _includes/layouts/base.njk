@@ -53,6 +53,9 @@
     <!-- Notably iOS UAs also contain Mac OS X -->
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
+    <link rel="preload" href="{{ '/css/main.css' | addHash }}" as="style">
+    <link rel="stylesheet" href="{{ '/css/main.css' | addHash }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
   </head>
   <body>
     <header>
@@ -91,7 +94,6 @@
 
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
-      <!-- css is inserted by optimize-html custom plugin -->
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
