@@ -53,10 +53,7 @@
     <!-- Notably iOS UAs also contain Mac OS X -->
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
-    <link rel="preload" href="{{ 'fonts/Inter-Bold.woff2' }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ 'fonts/Inter-Regular.woff2' }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ 'fonts/Inter-BoldItalic.woff2' }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ 'fonts/Inter-ExtraLight.woff2' }}" as="font" type="font/woff2" crossorigin>
+    <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
     <header>
@@ -95,7 +92,6 @@
 
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
-      <!-- css is inserted by optimize-html custom plugin -->
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
