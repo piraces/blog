@@ -41,22 +41,26 @@ const purifyCss = async (rawContent, outputPath) => {
   let content = rawContent;
   if (
     outputPath &&
-    outputPath.endsWith(".css") &&
+    outputPath.endsWith(".html") &&
     !isAmp(content) &&
     !/data-style-override/.test(content)
   ) {
-    content = content.replace(/@font-face {/g, "@font-face {font-display:swap;");
+    let before = require("fs").readFileSync("css/main.css", {
+      encoding: "utf-8",
+    });
+
+    before = before.replace(/@font-face {/g, "@font-face {font-display:swap;");
 
     const purged = await new PurgeCSS().purge({
       content: [
         {
           raw: rawContent,
-          extension: "css",
+          extension: "html",
         },
       ],
       css: [
         {
-          raw: content,
+          raw: before,
         },
       ],
       /*extractors: [
@@ -68,7 +72,11 @@ const purifyCss = async (rawContent, outputPath) => {
       fontFace: true,
       variables: true,
     });
-    return csso.minify(purged[0].css).css;
+
+    const after = csso.minify(purged[0].css).css;
+    //console.log("CSS reduction", before.length - after.length);
+
+    content = content.replace("</footer>", `<style>${after}</style></footer>`);
   }
   return content;
 };
