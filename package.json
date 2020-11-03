@@ -57,7 +57,7 @@
     "html-minifier": "^4.0.0",
     "image-size": "^0.9.3",
     "lru-cache": "^6.0.0",
-    "mocha": "^8.2.0",
+    "mocha": "^8.2.1",
     "purge-from-html": "^1.0.3",
     "purgecss": "^3.0.0",
     "rollup": "^2.33.1",
