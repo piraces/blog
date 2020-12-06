@@ -5,7 +5,7 @@ date: 2020-12-09
 tags:
   - opensource
   - dotnet
-  - c#
+  - csharp
   - automation
 layout: layouts/post.njk
 ---
