@@ -25,7 +25,7 @@ These type of tools have been since the begining of times, but also evolving, si
 We now see some programs representing progress bars, spinners, and some other features.
 But how can we do it like this programs?
 
-# How to make the console more "attractive"?
+## How to make the console more "attractive"?
 
 I remember executing console apps that shows a ['FIGlet'](http://www.figlet.org/) as a banner, introducing the main execution for the program, and then printing some output in an ordered way that could be easily understood, but maybe not familiar for some users and/or 'difficult to understand'.
 
@@ -49,7 +49,7 @@ It is also support for doing great things in console in the dotnet framework but
 
 Let's get with them!
 
-## Spectre.Console
+### Spectre.Console
 
 As said above, [Spectre.Console](https://github.com/spectresystems/spectre.console) is a .NET 5/.NET Standard 2.0 library that makes it easier to create beautiful, cross platform, console applications (heavily inspired by the excellent [Rich library for Python](https://github.com/willmcgugan/rich)).
 
@@ -80,7 +80,7 @@ On my way doing some research of this library, I developed a console app as a de
 
 I felt the library easy to understand and use, with great support and documentation, it is easy to improve some of our console apps using it. Give it a try!
 
-## Gui.cs
+### Gui.cs
 
 [gui.cs](https://github.com/migueldeicaza/gui.cs), its a simple (but complete and full of features) toolkit for buiding console GUI apps for .NET, .NET Core, and Mono that works on Windows, Mac, and Linux/Unix. Made by [Miguel de Icaza](https://twitter.com/migueldeicaza), actually working in Microsoft.
 
@@ -98,14 +98,14 @@ But that is not all! It is also cross platform, supports keyboard and mouse inpu
 
 I have tried this library but not all its features, and as far I can tell is that is a very awesome library with you could build almost any kind of app I can think of (replacing the user interface for a text based one).
 
-## Other ways...
+### Other ways...
 
 For sure, the [Console class](https://docs.microsoft.com/en-us/dotnet/api/system.console?view=net-5.0) included in the .NET API, expose lots of properties, methods and events to improve the console experience.
 
 The libraries shown above are useful for the most of apps in order to not reinvent the wheel. But, in case you feel like you do not need them or you want to implement it better on your own. There is always the possibility of doing awesome thing with the **dotnet** framework itself alone.
 
 
-# Conclusion
+## Conclusion
 
 Console apps exist and will be there for a long time, they improve, and also the terminal they run in. Trying to make them more user friendly and more "understandable", its for sure a very good bet for get our users comfortable using our tools/apps.
 
