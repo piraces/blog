@@ -60,7 +60,7 @@
     "mocha": "^8.2.1",
     "purge-from-html": "^1.0.3",
     "purgecss": "^3.1.0",
-    "rollup": "^2.34.2",
+    "rollup": "^2.35.1",
     "sharp": "^0.26.3",
     "twitter": "^1.7.1"
   }
