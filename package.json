@@ -45,7 +45,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@ampproject/toolbox-optimizer": "^2.7.2",
+    "@ampproject/toolbox-optimizer": "^2.7.3",
     "@saschazar/wasm-avif": "^1.0.0",
     "clean-css": "^4.2.3",
     "concurrently": "^5.3.0",
