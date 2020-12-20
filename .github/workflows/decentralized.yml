@@ -25,4 +25,3 @@ jobs:
         pinataKey: ${{ secrets.PINATA_KEY }}
         pinataSecret: ${{ secrets.PINATA_SECRET }}
         pinataPinName: piraces
-    - run: echo ${{ steps.upload.outputs.hash }}
