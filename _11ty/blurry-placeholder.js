@@ -59,6 +59,7 @@ async function getDataURI(src) {
   const info = await sizeOf(src);
   const imgDimension = getBitmapDimensions_(info.width, info.height);
   const buffer = await sharp(src)
+    .rotate() // Manifest rotation from metadata
     .resize(imgDimension.width, imgDimension.height)
     .png()
     .toBuffer();
@@ -109,7 +110,7 @@ module.exports = async function (src) {
                       <feFuncA type="discrete" tableValues="1 1"></feFuncA>
                     </feComponentTransfer>
                   </filter>
-                  <image filter="url(#b)" x="0" y="0"
+                  <image filter="url(#b)" preserveAspectRatio="none"
                     height="100%" width="100%"
                     xlink:href="${dataURI.src}">
                   </image>

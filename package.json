@@ -46,7 +46,6 @@
   },
   "dependencies": {
     "@ampproject/toolbox-optimizer": "^2.7.4",
-    "@saschazar/wasm-avif": "^1.0.0",
     "clean-css": "^4.2.3",
     "concurrently": "^5.3.0",
     "csp-hash-generator": "0.0.3",
@@ -56,10 +55,13 @@
     "hasha": "^5.2.2",
     "html-minifier": "^4.0.0",
     "image-size": "^0.9.3",
+    "jimp": "^0.16.1",
     "lru-cache": "^6.0.0",
     "mocha": "^8.2.1",
+    "phin": "^3.5.1",
     "purge-from-html": "^1.0.3",
     "purgecss": "^3.1.3",
+    "querystring": "^0.2.0",
     "rollup": "^2.35.1",
     "sharp": "^0.27.0",
     "twitter": "^1.7.1"

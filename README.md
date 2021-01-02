@@ -8,6 +8,8 @@ Blog for piraces.dev, made with the [Eleventy static site generator](https://www
 
 Based on the awesome [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
+*Last update from template: 02/01/2021*
+
 ## Getting Started
 
 ### 1. Install dependencies

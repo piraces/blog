@@ -5,6 +5,7 @@
   "description": "Personal blog about Software development and tech related things",
   "genre": "Software Engineering",
   "googleAnalyticsId": "UA-136840526-1",
+  "sendWebVitals": true,
   "feed": {
     "subtitle": "Personal blog about Software development and tech related things",
     "filename": "feed.xml",

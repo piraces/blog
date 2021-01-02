@@ -5,3 +5,5 @@ js/min.js
 js/min.js.map
 .vscode/
 .vs
+.netlify/
+export

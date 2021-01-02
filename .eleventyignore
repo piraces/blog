@@ -1,5 +1,6 @@
 .DS_Store
 .github/
+.netlify/
 _site/
 node_modules/
 package-lock.json
@@ -9,3 +10,4 @@ third_party
 functions
 test
 src
+.oryx_prod_node_modules/
