@@ -2,6 +2,7 @@
 
 ![CI](https://github.com/piraces/blog/workflows/CI/badge.svg)
 ![Deploy to IPFS](https://github.com/piraces/blog/workflows/Deploy%20to%20IPFS/badge.svg)
+![Publish to Netlify](https://github.com/piraces/blog/workflows/Publish%20to%20Netlify/badge.svg)
 
 Blog for piraces.dev, made with the [Eleventy static site generator](https://www.11ty.dev/) implementing a wide range of performance best practices (using the template [google/eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog)).
 
