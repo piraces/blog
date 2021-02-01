@@ -7,6 +7,12 @@ eleventyNavigation:
   order: 4
 ---
 
+* [ Azure DevOps Bicep Tasks ](#azure-devops-bicep-tasks)
+
+* [ dotnet-tool-run ](#dotnet-tool-run)
+
+* [ guid-ts ](#guid-ts)
+
 * [ kube-score check ](#kube-score-check)
 
 * [ developer.li ](#developerli)
@@ -37,6 +43,46 @@ eleventyNavigation:
 
 * [ WallaPet ](#wallapet)
 
+-----------
+
+## Azure DevOps Bicep Tasks
+
+**Azure DevOps set of tasks that allow to install and run Microsoft Bicep CLI commands**
+
+This is a simple yet useful Azure DevOps set of tasks that allow to install and run [Microsoft Bicep CLI](https://github.com/Azure/bicep) commands in Azure Pipelines (cross-platform).
+
+
+[View project](https://github.com/piraces/azure-devops-bicep-task/)
+[**View in Marketplace**](https://marketplace.visualstudio.com/items?itemName=piraces.bicep-tasks)
+
+-----------
+
+## dotnet-tool-run
+
+**.NET tool to execute other dotnet tools without installing them globally or in a project**
+
+A simple .NET tool to execute other dotnet tools without installing them globally or in a project (a similar approach to [npx](https://www.npmjs.com/package/npx) from [npm](https://www.npmjs.com/)).
+
+
+[View project](https://github.com/piraces/dotnet-tool-run)
+[**View in Nuget.org**](https://www.nuget.org/packages/dotnet-tool-run/)
+
+-----------
+
+## guid-ts
+
+**Package for generating and managing globally unique identifiers (GUIDs) v4 in Typescript**
+
+Package for generating and managing globally unique identifiers (GUIDs) v4 in Typescript.
+
+Lightweight, simple, dependency free, and reliable package.
+
+This package provides a class which can parse and generate a GUID based on the [RFC4122](https://www.ietf.org/rfc/rfc4122.txt).
+The package also expose methods to manage GUIDs.
+
+
+[View project](https://github.com/piraces/guid-ts)
+[**View in npmjs.com**](https://www.npmjs.com/package/guid-ts)
 
 -----------
 

@@ -21,6 +21,14 @@ And...
 
 Or...
 
+<a href="/contributions/">See some of my contributions</a>
+
+Or...
+
+<a href="/uses/">View the Hardware/Software I use in my day to day as a developer</a>
+
+Or...
+
 <a href="/labs/">See some experiments I have done 😃 (just for fun)</a>
 
 

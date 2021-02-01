@@ -147,21 +147,6 @@ const dynamicScriptInject = (src) => {
   });
 };
 
-// Script web-vitals.js will be injected dynamically if user opts-in to sending CWV data.
-const sendWebVitals = document.currentScript.getAttribute("data-cwv-src");
-
-if (/web-vitals.js/.test(sendWebVitals)) {
-  dynamicScriptInject(`${window.location.origin}/js/web-vitals.js`)
-  .then(() => {
-    webVitals.getCLS(sendToGoogleAnalytics);
-    webVitals.getFID(sendToGoogleAnalytics);
-    webVitals.getLCP(sendToGoogleAnalytics);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-}
-
 addEventListener(
   "click",
   function (e) {
