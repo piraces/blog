@@ -37,7 +37,7 @@
     "jsdom": "^16.4.0",
     "luxon": "^1.25.0",
     "markdown-it": "^12.0.4",
-    "markdown-it-anchor": "^7.0.0",
+    "markdown-it-anchor": "^7.0.1",
     "node-fetch": "^2.6.1",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.1",
