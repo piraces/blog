@@ -32,7 +32,7 @@ const SELF = quote("self");
 const CSP = {
   regular: serialize([
     // By default only talk to same-origin
-    ["default-src", SELF],
+    ["default-src", SELF, 'https://plausible.io'],
     // No plugins
     ["object-src", quote("none")],
     // Script from same-origin and inline-hashes.
