@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@ampproject/toolbox-optimizer": "^2.7.6",
-    "clean-css": "^5.0.1",
+    "clean-css": "^5.1.0",
     "concurrently": "^5.3.0",
     "csp-hash-generator": "0.0.3",
     "csso": "^4.2.0",
