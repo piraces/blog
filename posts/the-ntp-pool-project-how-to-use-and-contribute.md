@@ -9,6 +9,7 @@ tags:
   - tutorial
   - contributing
   - community
+image: ../../img/posts/ntp-pool-project-use-contribute/Analog_Clock.jpeg
 layout: layouts/post.njk
 ---
 

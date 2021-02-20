@@ -7,6 +7,7 @@ tags:
   - web
   - learning
   - javascript
+image: ../../img/posts/understanding-and-managing-peer-dependencies/peerDependencies.png
 layout: layouts/post.njk
 ---
 

@@ -7,6 +7,7 @@ tags:
   - dotnet
   - csharp
   - opensource
+image: ../../img/posts/awesome-console-apps-csharp/spectre_table.gif
 layout: layouts/post.njk
 ---
 

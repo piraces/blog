@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Contributions
+description: I love contributing to open source software... Here is a short brief about my contributions
+image: ../../img/contributions/opensource_logo.png
 templateClass: tmpl-post
 ---
 

@@ -7,6 +7,7 @@ tags:
   - devops
   - tutorial
   - automation
+image: ../../img/posts/automating-docker-image-updates-watchtower/watchtower-docker.png
 layout: layouts/post.njk
 ---
 

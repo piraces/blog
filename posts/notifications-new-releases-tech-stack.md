@@ -7,6 +7,7 @@ tags:
   - github
   - tutorial
   - automation
+image: ../../img/posts/notifications-new-releases-tech-stack/github_release.png
 layout: layouts/post.njk
 ---
 

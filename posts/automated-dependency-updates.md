@@ -7,6 +7,7 @@ tags:
   - web
   - learning
   - showdev
+image: ../../img/posts/automated-dependency-updates/Github_Dependabot.jpg
 layout: layouts/post.njk
 ---
 

@@ -4,6 +4,7 @@ description: My first post! Welcome to my new blog!
 date: 2019-01-01
 tags:
   - intro
+image: ../../img/posts/hello-world/Hello_World_Befunge.png
 layout: layouts/post.njk
 ---
 

@@ -7,6 +7,7 @@ tags:
   - dns
   - ddns
   - sideprojects
+image: ../../img/posts/freedns-subdomains-for-your-side-projects-demos-aliases/Side_Project_Ideas.png
 layout: layouts/post.njk
 ---
 <div align="center">

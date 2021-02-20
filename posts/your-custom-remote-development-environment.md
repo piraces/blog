@@ -11,6 +11,7 @@ tags:
   - build
   - programming
   - server
+image: ../../img/posts/your-custom-remote-development-environment/VSCode_Screenshot.jpg
 layout: layouts/post.njk
 ---
 

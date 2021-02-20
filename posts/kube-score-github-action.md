@@ -7,6 +7,7 @@ tags:
   - github
   - showdev
   - automation
+image: ../../img/posts/kube-score-github-action/Cover_Image.webp
 layout: layouts/post.njk
 ---
 

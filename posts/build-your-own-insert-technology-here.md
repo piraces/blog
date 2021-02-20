@@ -6,6 +6,7 @@ tags:
   - githunt
   - build
   - learning
+image: ../../img/posts/build-your-own-insert-technology-here/Richard_Feynman.png
 layout: layouts/post.njk
 ---
 

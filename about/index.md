@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.njk
 title: About
+description: Learn more about me...
+image: ../../img/favicon/apple-touch-icon.png
 templateClass: tmpl-post
 eleventyNavigation:
   key: About

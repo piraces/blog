@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Labs
+description: Here is were I show some interesting front-end (or maybe other kind of) experiments 🧪
+image: ../../img/labs/labs.png
 templateClass: tmpl-post
 ---
 

@@ -8,6 +8,7 @@ tags:
   - web
   - pwa
   - learning
+image: ../../img/posts/improve-lighthouse-score-audit/LightHouse_100.png
 layout: layouts/post.njk
 ---
 <div align="center">
