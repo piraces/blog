@@ -11,7 +11,7 @@ eleventyNavigation:
 
 * [ Azure DevOps Bicep Tasks ](#azure-devops-bicep-tasks)
 
-* [ dotnet-tool-run ](#dotnet-tool-run)
+* [ dotnex ](#dotnex)
 
 * [ guid-ts ](#guid-ts)
 
@@ -59,15 +59,16 @@ This is a simple yet useful Azure DevOps set of tasks that allow to install and 
 
 -----------
 
-## dotnet-tool-run
+## dotnex
 
 **.NET tool to execute other dotnet tools without installing them globally or in a project**
 
 A simple .NET tool to execute other dotnet tools without installing them globally or in a project (a similar approach to [npx](https://www.npmjs.com/package/npx) from [npm](https://www.npmjs.com/)).
 
+**Note**: This project was previously named `dotnet-tool-run`, but it was renamed to simplify and provide a shorter name. You can see the older package [here](https://www.nuget.org/packages/dotnet-tool-run/).
 
-[View project](https://github.com/piraces/dotnet-tool-run)
-[**View in Nuget.org**](https://www.nuget.org/packages/dotnet-tool-run/)
+[View project](https://github.com/piraces/dotnex)
+[**View in Nuget.org**](https://www.nuget.org/packages/dotnex/)
 
 -----------
 
