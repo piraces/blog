@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: piraces.dev
+Token: 260427eccf13c32ad70793e231738cffd556ca854fc43c6217cceff918a00ed0
