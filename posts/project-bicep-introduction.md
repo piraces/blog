@@ -120,6 +120,6 @@ There is much more about Project Bicep to discover (and features to come!), for 
 
 ---
 
-**Originally published at [plainconcepts.com](plainconcepts.com):**
+**Originally published at [plainconcepts.com](https://www.plainconcepts.com/):**
 - **English version**: [https://www.plainconcepts.com/project-bicep-introduction/](https://www.plainconcepts.com/project-bicep-introduction/)
 - **Spanish version**: [https://www.plainconcepts.com/es/project-bicep-introduccion/](https://www.plainconcepts.com/es/project-bicep-introduccion/)
