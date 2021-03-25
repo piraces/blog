@@ -29,7 +29,11 @@
       <meta property="og:image" content="{{ image | absoluteUrl(metadata.url) }}">
     {% endif %}
 
+  {% if canonical %}
+    <link rel="canonical" href="{{ canonical }}" />
+  {% else %}
     <link rel="canonical" href="{{ metadata.url }}{{ canonicalUrl or page.url }}">
+  {% endif %}
     <!-- This is a blog and so it SHOULD be safe and it is nice for the web
          to send referrers cross-origin.
          However, if you use sensitive data in URLs, consider changing this to
