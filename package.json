@@ -44,7 +44,7 @@
   "dependencies": {
     "@ampproject/toolbox-optimizer": "^2.7.6",
     "clean-css": "^5.1.2",
-    "concurrently": "^6.0.1",
+    "concurrently": "^6.0.2",
     "csp-hash-generator": "0.0.3",
     "csso": "^4.2.0",
     "datauri": "^3.0.0",
