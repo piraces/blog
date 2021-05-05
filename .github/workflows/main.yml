@@ -39,5 +39,11 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1        
+        timeout-minutes: 1
+    
+      - name: Upload deployment artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: deployment
+          path: ./_site
         
