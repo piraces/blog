@@ -62,7 +62,7 @@ describe("check build output for a generic post", () => {
 
     it("should have script elements", () => {
       const scripts = doc.querySelectorAll("script[src]");
-      expect(scripts).to.have.length(0);
+      expect(scripts).to.have.length(1); // NOTE: update this when adding more <script>
       expect(scripts[0].getAttribute("src")).to.match(
         /^\/js\/min\.js\?hash=\w+/
       );
@@ -127,8 +127,9 @@ describe("check build output for a generic post", () => {
         const picture = pictures[0];
         const sources = Array.from(picture.querySelectorAll("source"));
         expect(sources).to.have.length(3);
-        expect(img.src).to.match(/\/img\/remote\/\w+\.jpg/);
-        expect(metaImage).to.equal(URL + img.src);
+        expect(img.src).to.match(/^\/img\/remote\/\w+-1920w\.jpg$/);
+        expect(metaImage).to.match(new RegExp(URL));
+        expect(metaImage).to.match(/\/img\/remote\/\w+\.jpg$/);
         const avif = sources.shift();
         const webp = sources.shift();
         const jpg = sources.shift();

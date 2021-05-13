@@ -7,7 +7,7 @@ Blog for piraces.dev, made with the [Eleventy static site generator](https://www
 
 Based on the awesome [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
-*Last update from template (last check): 15/03/2021*
+*Last update from template (last check): 13/05/2021*
 
 ## Getting Started
 
