@@ -1,0 +1,12 @@
+<div style="display: flex; flex-direction: row; justify-content: space-between; align-content: center;">
+{% if pagination.pageNumber > 1 %}
+<a href="/{{ paginationSlug }}{{ pagination.pageNumber - 1 }}">{{"<- Previous page" | escape  }}</a>
+{% endif %}
+{% if pagination.pageNumber == 1 %}
+<a href="/{{ paginationSlug }}">{{"<- Previous page" | escape  }}</a>
+{% endif %}
+{% set remainingPages = (((content | length) / pagination.size) | int ) %}
+{% if remainingPages > 0 %}
+<a href="/{{ paginationSlug }}{{ pagination.pageNumber + 1 }}">{{"Next page ->" | escape }}</a>
+{% endif %}
+</div>

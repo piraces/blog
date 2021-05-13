@@ -3,6 +3,12 @@ title: Piraces Personal Blog
 layout: layouts/home.njk
 description: Personal blog about software development and tech related things
 date: Last Modified
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+permalink: /{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}
 ---
 
 <p>
@@ -17,6 +23,9 @@ date: Last Modified
 
 <div id="posts">
   <h2>Posts</h2>
-  {% set postslist = collections.posts %}
+  {% set postslist = posts %}
   {% include "postslist.njk" %}
 </div>
+{% set content = posts %}
+{% set paginationSlug = "" %}
+{% include "pagination_control.njk" %}
