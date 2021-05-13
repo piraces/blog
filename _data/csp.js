@@ -36,11 +36,13 @@ const CSP = {
     // No plugins
     ["object-src", quote("none")],
     // Script from same-origin and inline-hashes.
-    ["script-src", SELF, 'https://plausible.io', /* Replaced by csp.js plugin */ "HASHES"],
+    ["script-src", SELF, 'https://plausible.io', 'https://cdn.jsdelivr.net', /* Replaced by csp.js plugin */ "HASHES"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
     ["img-src", SELF, "data:"],
+    // connect-src to allow some connections to APIs
+    ["connect-src", SELF, "https://api.hackertarget.com"],
 
     // To add new rules, add new array literals here or extend those above with
     // additional allowed elements.
