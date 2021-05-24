@@ -31,7 +31,7 @@
     "eleventy-plugin-pwa": "^1.0.8",
     "file-type": "^16.4.0",
     "fs-extra": "^10.0.0",
-    "jsdom": "^16.5.3",
+    "jsdom": "^16.6.0",
     "luxon": "^1.27.0",
     "markdown-it": "^12.0.6",
     "markdown-it-anchor": "^7.1.0",
