@@ -59,7 +59,7 @@
     "purge-from-html": "^1.0.3",
     "purgecss": "^4.0.3",
     "querystring": "^0.2.1",
-    "rollup": "^2.50.1",
+    "rollup": "^2.50.2",
     "sharp": "^0.28.3",
     "twitter": "^1.7.1"
   }
