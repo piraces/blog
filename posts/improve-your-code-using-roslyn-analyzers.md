@@ -22,7 +22,7 @@ I stumbled upon Roslyn Analyzers while contributing to an issue to the [Microsof
 
 That triggered my interest, as I tried to put a simple `Console.WriteLine` statement and an alert similar as the image above appeared in Visual Studio.
 
-If thought that these kind of "custom rules" combined with the `csproj` `TreatWarningsAsErrors` option (`<TreatWarningsAsErrors>true</TreatWarningsAsErrors>`) could be a very great solution to maintain dotnet projects code quality, maintainability, design and style in a nice way. In my opinion, more useful and necessary in OSS projects or projects with lots of people working on it.
+I thought that these kind of "custom rules" combined with the `csproj` `TreatWarningsAsErrors` option (`<TreatWarningsAsErrors>true</TreatWarningsAsErrors>`) could be a very great solution to maintain dotnet projects code quality, maintainability, design and style in a nice way. In my opinion, more useful and necessary in OSS projects or projects with lots of people working on it.
 
 ## Using BannedApiAnalyzers in a dotnet project
 
@@ -51,7 +51,7 @@ Or with Visual Studio, specifying the file properties:
 {Documentation Comment ID string for the symbol}[;Description Text]
 ```
 
-4. **That's all!** The fields in the `BannedSymbols.txt` file will be processed and mark as warnings the use of the banned symbols specified. These warnings are of type `RS0030`, `RS0031` or `RS0035`. More info can be found in [the roslyn analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/main/src/Microsoft.CodeAnalysis.BannedApiAnalyzers/Microsoft.CodeAnalysis.BannedApiAnalyzers.md).
+4. **That's all!** The fields in the `BannedSymbols.txt` file will be processed and mark as warnings the use of the specified banned symbols. These warnings are of type `RS0030`, `RS0031` or `RS0035`. More info can be found in [the roslyn analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/main/src/Microsoft.CodeAnalysis.BannedApiAnalyzers/Microsoft.CodeAnalysis.BannedApiAnalyzers.md).
 
 
 Take into account that we could use a `BannedSymbols.txt` file per project or a Solution wide one, including the same `BannedSymbols.txt` file in all projects.
@@ -159,7 +159,7 @@ These analyzers have been consolidated in different packages.
 
 The `BannedApiAnalyzers` is one of them, but there are others also as useful as this one:
 
-- `Microsoft.CodeAnalysis.NetAnalyzers`: Included default for .NET 5+. For earlier targets [see this](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers).
+- `Microsoft.CodeAnalysis.NetAnalyzers`: Included by default for .NET 5+. For earlier targets [see this](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers).
 
 - `Microsoft.CodeAnalysis.PublicApiAnalyzers`: Helps library authors monitor changes to their public APIs ([more info](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysispublicapianalyzers)).
 
