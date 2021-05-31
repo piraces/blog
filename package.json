@@ -29,7 +29,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
     "eleventy-plugin-local-images": "^0.4.0",
     "eleventy-plugin-pwa": "^1.0.8",
-    "file-type": "^16.4.0",
+    "file-type": "^16.5.0",
     "fs-extra": "^10.0.0",
     "jsdom": "^16.6.0",
     "luxon": "^1.27.0",
