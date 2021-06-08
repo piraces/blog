@@ -54,7 +54,7 @@
     "image-size": "^1.0.0",
     "jimp": "^0.16.1",
     "lru-cache": "^6.0.0",
-    "mocha": "^8.4.0",
+    "mocha": "^9.0.0",
     "phin": "^3.6.0",
     "purge-from-html": "^1.0.3",
     "purgecss": "^4.0.3",
