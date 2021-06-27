@@ -54,7 +54,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const localImages = require("./third_party/eleventy-plugin-local-images/.eleventy.js");
 const CleanCSS = require("clean-css");
-const pluginPWA = require("eleventy-plugin-pwa");
+const pluginPWA = require("@piraces/eleventy-plugin-pwa");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
