@@ -6,10 +6,3 @@ updates:
     interval: daily
     time: "04:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: mocha
-    versions:
-    - 8.3.2
-  - dependency-name: rollup
-    versions:
-    - 2.38.3
