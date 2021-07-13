@@ -26,7 +26,7 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
     "@piraces/eleventy-plugin-pwa": "^1.1.1",
     "eleventy-plugin-local-images": "^0.4.1",
     "file-type": "^16.5.1",
