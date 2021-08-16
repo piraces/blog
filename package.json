@@ -31,7 +31,7 @@
     "eleventy-plugin-local-images": "^0.4.1",
     "file-type": "^16.5.3",
     "fs-extra": "^10.0.0",
-    "jsdom": "^16.7.0",
+    "jsdom": "^17.0.0",
     "luxon": "^2.0.2",
     "markdown-it": "^12.2.0",
     "markdown-it-anchor": "^8.1.2",
