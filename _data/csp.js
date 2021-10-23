@@ -40,7 +40,7 @@ const CSP = {
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
-    ["img-src", SELF, "data:"],
+    ["img-src", SELF, "data:", "https://gh-card.dev"],
     // connect-src to allow some connections to APIs
     ["connect-src", SELF, 'https://plausible.io', 'https://plausible.io/api/event', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", /* Replaced by csp.js plugin */ "HASHES"],
     // frame-ancestors to allow iframes from same origin
