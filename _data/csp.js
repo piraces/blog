@@ -42,7 +42,9 @@ const CSP = {
     // Images may also come from data-URIs.
     ["img-src", SELF, "data:"],
     // connect-src to allow some connections to APIs
-    ["connect-src", SELF, 'https://plausible.io', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", /* Replaced by csp.js plugin */ "HASHES"],
+    ["connect-src", SELF, 'https://plausible.io', 'https://plausible.io/api/event', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", /* Replaced by csp.js plugin */ "HASHES"],
+    // frame-ancestors to allow iframes from same origin
+    ["frame-ancestors", SELF],
 
     // To add new rules, add new array literals here or extend those above with
     // additional allowed elements.

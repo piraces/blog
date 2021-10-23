@@ -22,6 +22,7 @@ main img {
 /* Avoid the header hiding the content on anchor scroll. */
 article * {
   scroll-margin-top: 50px;
+  scroll-snap-margin-top: 50px;
 }
 
 /* "Content-visibility: auto" move the images over the other elements
@@ -432,6 +433,7 @@ SOFTWARE.
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 body {
   margin: 0;
