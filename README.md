@@ -2,12 +2,21 @@
 
 ![CI](https://github.com/piraces/blog/workflows/CI/badge.svg)
 ![Publish to Netlify](https://github.com/piraces/blog/workflows/Publish%20to%20Netlify/badge.svg)
+![IPFS](https://img.shields.io/badge/IPFS-Available-brightgreen?logo=ipfs)
 
-Blog for piraces.dev, made with the [Eleventy static site generator](https://www.11ty.dev/) implementing a wide range of performance best practices (using the template [google/eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog)).
+Blog for [piraces.dev](https://piraces.dev/), made with the [Eleventy static site generator](https://www.11ty.dev/) implementing a wide range of performance best practices (using the template [google/eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog)).
 
 Based on the awesome [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
 *Last update from template (last check): 13/05/2021*
+
+## IPFS
+
+This blog is deployed in IPFS using [Fleek](https://fleek.co/), using a fixed [IPNS](https://docs.ipfs.io/concepts/ipns/) and configured with an [ENS Domain](https://ens.domains/).
+
+*ipns://k51qzi5uqu5di6t427sc6mfo6g0mqjauvyxlnu7b2f59wxiigwcy0qroeaypu2*
+
+You can **[view it in IPFS (dweb.link gateway)](https://piraces-eth.ipns.dweb.link/)**.
 
 ## Getting Started
 
