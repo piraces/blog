@@ -41,7 +41,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@ampproject/toolbox-optimizer": "^2.8.3",
+    "@ampproject/toolbox-optimizer": "^2.8.4",
     "clean-css": "^5.2.2",
     "concurrently": "^6.4.0",
     "csp-hash-generator": "0.0.3",
