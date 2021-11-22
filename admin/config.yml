@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "img/posts/all"
+public_folder: "/img/posts/all"
+
+collections:
+  - label: "Blog" 
+    name: "blog"
+    folder: "posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
+      - { label: "Tags", name: "tags", widget: list, default: ["post"] }
+      - { label: "Image", name: "image", widget: string, default: ["../../img/posts/HERE"] }
+      - { label: "Layout", name: "layout", widget: string, default: "layouts/post.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
