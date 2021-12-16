@@ -4,6 +4,7 @@ const { JSDOM } = require("jsdom");
 const readFileSync = require("fs").readFileSync;
 const existsSync = require("fs").existsSync;
 const metadata = require("../_data/metadata.json");
+const { parseHeaders } = require("../_11ty/apply-csp");
 
 /**
  * These tests kind of suck and they are kind of useful.
@@ -14,7 +15,7 @@ const metadata = require("../_data/metadata.json");
 
 describe("check build output for a generic post", () => {
   describe("sample post", () => {
-    const POST_PATH = "/posts/firstpost/";
+    const POST_PATH = "/posts/hello-world/";
     const POST_FILENAME = `_site${POST_PATH}index.html`;
     const URL = metadata.url;
     const POST_URL = URL + POST_PATH;
@@ -44,14 +45,14 @@ describe("check build output for a generic post", () => {
     });
 
     it("should have metadata", () => {
-      assert.equal(select("title"), "This is my first post.");
+      assert.equal(select("title"), "Hello world!");
       expect(select("meta[property='og:image']", "content")).to.match(
-        /\/img\/remote\/\w+.jpg/
+        /\/img\/posts\/hello-world\/.+./
       );
       assert.equal(select("link[rel='canonical']", "href"), POST_URL);
       assert.equal(
         select("meta[name='description']", "content"),
-        "This is a post on My Blog about agile frameworks."
+        "My first post! Welcome to my new blog!"
       );
     });
 
@@ -63,7 +64,7 @@ describe("check build output for a generic post", () => {
 
     it("should have script elements", () => {
       const scripts = doc.querySelectorAll("script[src]");
-      expect(scripts).to.have.length(1); // NOTE: update this when adding more <script>
+      expect(scripts).to.have.length(3); // NOTE: update this when adding more <script>
       expect(scripts[0].getAttribute("src")).to.match(
         /^\/js\/min\.js\?hash=\w+/
       );
@@ -94,14 +95,14 @@ describe("check build output for a generic post", () => {
     });
 
     it("should have a header", () => {
-      expect(select("header > h1")).to.equal("This is my first post.");
+      expect(select("header > h2")).to.equal("Hello world!");
       expect(select("header aside")).to.match(/\d+ min read./);
       expect(select("header dialog", "id")).to.equal("message");
     });
 
     it("should have a published date", () => {
-      expect(select("article time")).to.equal("01 May 2018");
-      expect(select("article time", "datetime")).to.equal("2018-05-01");
+      expect(select("article time")).to.equal("01 Jan 2019");
+      expect(select("article time", "datetime")).to.equal("2019-01-01");
     });
 
     it("should link to twitter with noopener", () => {
@@ -129,20 +130,20 @@ describe("check build output for a generic post", () => {
         const picture = pictures[0];
         const sources = Array.from(picture.querySelectorAll("source"));
         expect(sources).to.have.length(3);
-        expect(img.src).to.match(/^\/img\/remote\/\w+-1920w\.jpg$/);
+        expect(img.src).to.match(/^\/img\/posts\/hello-world\/\w+-1920w\.jpg$/);
         expect(metaImage).to.match(new RegExp(URL));
-        expect(metaImage).to.match(/\/img\/remote\/\w+\.jpg$/);
+        expect(metaImage).to.match(/\/img\/posts\/hello-world\/\w+\.png$/);
         const avif = sources.shift();
         const webp = sources.shift();
         const jpg = sources.shift();
         expect(jpg.srcset).to.match(
-          /\/img\/remote\/\w+-1920w.jpg 1920w, \/img\/remote\/\w+-1280w.jpg 1280w, \/img\/remote\/\w+-640w.jpg 640w, \/img\/remote\/\w+-320w.jpg 320w/
+          /\/img\/posts\/hello-world\/\w+-1920w.jpg 1920w, \/img\/posts\/hello-world\/\w+-1280w.jpg 1280w, \/img\/posts\/hello-world\/\w+-640w.jpg 640w, \/img\/posts\/hello-world\/\w+-320w.jpg 320w/
         );
         expect(webp.srcset).to.match(
-          /\/img\/remote\/\w+-1920w.webp 1920w, \/img\/remote\/\w+-1280w.webp 1280w, \/img\/remote\/\w+-640w.webp 640w, \/img\/remote\/\w+-320w.webp 320w/
+          /\/img\/posts\/hello-world\/\w+-1920w.webp 1920w, \/img\/posts\/hello-world\/\w+-1280w.webp 1280w, \/img\/posts\/hello-world\/\w+-640w.webp 640w, \/img\/posts\/hello-world\/\w+-320w.webp 320w/
         );
         expect(avif.srcset).to.match(
-          /\/img\/remote\/\w+-1920w.avif 1920w, \/img\/remote\/\w+-1280w.avif 1280w, \/img\/remote\/\w+-640w.avif 640w, \/img\/remote\/\w+-320w.avif 320w/
+          /\/img\/posts\/hello-world\/\w+-1920w.avif 1920w, \/img\/posts\/hello-world\/\w+-1280w.avif 1280w, \/img\/posts\/hello-world\/\w+-640w.avif 640w, \/img\/posts\/hello-world\/\w+-320w.avif 320w/
         );
         expect(jpg.type).to.equal("image/jpeg");
         expect(webp.type).to.equal("image/webp");
@@ -165,8 +166,8 @@ describe("check build output for a generic post", () => {
         );
         const obj = JSON.parse(json);
         expect(obj.url).to.equal(POST_URL);
-        expect(obj.description).to.equal(
-          "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster..."
+        expect(obj.description).to.contain(
+          "Welcome to my new blog! Update 19/09/2020: I have moved the entire blog to 11ty, using the awesome template.."
         );
         expect(obj.image.length).to.be.greaterThan(0);
         obj.image.forEach((url, index) => {

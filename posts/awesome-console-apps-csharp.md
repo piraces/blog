@@ -7,13 +7,13 @@ tags:
   - dotnet
   - csharp
   - opensource
-image: ../../img/posts/awesome-console-apps-csharp/spectre_table.webp
+image: ../../img/posts/awesome-console-apps-csharp/spectre_table.png
 layout: layouts/post.njk
 ---
 
 <div align="center">
 
-![Cover image](../../img/posts/awesome-console-apps-csharp/spectre_table.webp)
+![Cover image](../../img/posts/awesome-console-apps-csharp/spectre_table.png)
 </div>
 <div align="center"><em>An example fancy application using the Spectre.Console library</em></div>
 

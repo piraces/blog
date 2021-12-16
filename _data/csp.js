@@ -35,8 +35,8 @@ const CSP = {
     ["default-src", SELF, 'https://plausible.io'],
     // No plugins
     ["object-src", quote("none")],
-    // Script from same-origin and inline-hashes.
-    ["script-src", SELF, 'https://plausible.io', 'https://cdn.jsdelivr.net', /* Replaced by csp.js plugin */ "HASHES"],
+    // Script from same-origin, inline-hashes and unsafe-inline :(
+    ["script-src", SELF, 'https://plausible.io', 'https://cdn.jsdelivr.net', 'https://unpkg.com', 'https://identity.netlify.com', quote("unsafe-inline"), /* Replaced by csp.js plugin */ "HASHES"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
