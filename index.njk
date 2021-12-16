@@ -29,14 +29,3 @@ permalink: /{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% end
 {% set content = posts %}
 {% set paginationSlug = "" %}
 {% include "pagination_control.njk" %}
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
