@@ -21,3 +21,7 @@
   Content-Type: application/manifest+json; charset=utf-8
 /*.js
   Content-Type: application/javascript; charset=utf-8
+
+# [csp headers]
+# this text will be replaced by apply-csp.js plugin
+# [end csp headers]

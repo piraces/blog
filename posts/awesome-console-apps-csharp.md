@@ -7,13 +7,13 @@ tags:
   - dotnet
   - csharp
   - opensource
-image: ../../img/posts/awesome-console-apps-csharp/spectre_table.gif
+image: ../../img/posts/awesome-console-apps-csharp/spectre_table.webp
 layout: layouts/post.njk
 ---
 
 <div align="center">
 
-![Cover image](../../img/posts/awesome-console-apps-csharp/spectre_table.gif)
+![Cover image](../../img/posts/awesome-console-apps-csharp/spectre_table.webp)
 </div>
 <div align="center"><em>An example fancy application using the Spectre.Console library</em></div>
 
@@ -93,7 +93,7 @@ But that is not all! It is also cross platform, supports keyboard and mouse inpu
 
 <div align="center">
 
-![Features of gui.cs](../../img/posts/awesome-console-apps-csharp/guics_sample.gif)
+![Features of gui.cs](../../img/posts/awesome-console-apps-csharp/guics_sample.webp)
 </div>
 <div align="center"><em>Features of gui.cs</em></div>
 

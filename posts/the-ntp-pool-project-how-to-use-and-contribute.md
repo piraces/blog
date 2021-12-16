@@ -174,5 +174,5 @@ Thank you for contributing!! 🎉
 
 <div align="center">
 
-![Feels good!](../../img/posts/ntp-pool-project-use-contribute/Feels_Good_Man.gif)
+![Feels good!](../../img/posts/ntp-pool-project-use-contribute/Feels_Good_Man.webp)
 </div>

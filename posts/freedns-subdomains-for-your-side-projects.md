@@ -20,7 +20,7 @@ In my daily life, besides working as a Software developer, I'm always interested
 But how to make this projects available on the public internet?
 <div align="center">
 
-![Dynamic IPs for public projects?](../../img/posts/freedns-subdomains-for-your-side-projects-demos-aliases/Pulp_Fiction_Internet.gif)
+![Dynamic IPs for public projects?](../../img/posts/freedns-subdomains-for-your-side-projects-demos-aliases/Pulp_Fiction_Internet.webp)
 </div>
 <div align="center">
 Dynamic IPs for public projects?

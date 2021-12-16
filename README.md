@@ -8,7 +8,7 @@ Blog for [piraces.dev](https://piraces.dev/), made with the [Eleventy static sit
 
 Based on the awesome [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
-*Last update from template (last check): 13/05/2021*
+*Last update from template (last check): 16/12/2021*
 
 ## IPFS
 

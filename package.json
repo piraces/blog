@@ -4,14 +4,16 @@
   "license": "MIT",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "build": "npm run js-build && eleventy && npm run test",
-    "watch": "concurrently \"eleventy --serve\" \"npm run js-build-watch\" \"npm run test-watch\"",
-    "serve": "eleventy --serve",
+    "build-ci": "npm run js-build && eleventy && npm run test",
+    "build": "npm run clean && npm run build-ci",
+    "watch": "concurrently \"npm run serve\" \"npm run js-build-watch\" \"npm run test-watch\"",
+    "serve": "npm run clean && eleventy --serve",
     "js-build": "rollup -c rollup.config.js",
     "js-build-watch": "rollup -c rollup.config.js -w",
     "debug": "DEBUG=* eleventy && npm run test",
     "test": "mocha test/test*.js",
-    "test-watch": "mocha test/test*.js --watch"
+    "test-watch": "mocha test/test*.js --watch",
+    "clean": "rimraf ./_site/posts/*"
   },
   "pre-commit": [],
   "repository": {
@@ -37,11 +39,11 @@
     "node-fetch": "^3.1.0",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.1",
+    "rimraf": "^3.0.2",
     "rollup-plugin-terser": "^7.0.2",
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@ampproject/toolbox-optimizer": "^2.8.4",
     "clean-css": "^5.2.2",
     "concurrently": "^6.4.0",
     "csp-hash-generator": "0.0.3",
