@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "clean-css": "^5.2.2",
-    "concurrently": "^6.4.0",
+    "concurrently": "^6.5.1",
     "csp-hash-generator": "0.0.3",
     "csso": "^5.0.1",
     "datauri": "^4.1.0",
