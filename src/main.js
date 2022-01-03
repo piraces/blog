@@ -21,10 +21,21 @@
 
 const exposed = {};
 if (location.search) {
-  var a = document.createElement("a");
-  a.href = location.href;
-  a.search = "";
-  history.replaceState(null, null, a.href);
+  var params = (new URL(location)).searchParams;
+  var keys = params.keys();
+  let result = it.next();
+  var searchParams = [];
+  while (!result.done) {
+    searchParams.push(result.value);
+    result = it.next();
+  }
+
+  if (searchParams.length > 1 || (searchParams.length == 1 && searchParams[0] !== "giscus")) {
+    var a = document.createElement("a");
+    a.href = location.href;
+    a.search = "";
+    history.replaceState(null, null, a.href);
+  }
 }
 
 function tweet_(url) {
