@@ -130,14 +130,14 @@ describe("check build output for a generic post", () => {
         const picture = pictures[0];
         const sources = Array.from(picture.querySelectorAll("source"));
         expect(sources).to.have.length(3);
-        expect(img.src).to.match(/^\/img\/posts\/hello-world\/\w+-1920w\.jpg$/);
+        expect(img.src).to.match(/^\/img\/posts\/hello-world\/\w+-1920w\.png$/);
         expect(metaImage).to.match(new RegExp(URL));
         expect(metaImage).to.match(/\/img\/posts\/hello-world\/\w+\.png$/);
         const avif = sources.shift();
         const webp = sources.shift();
-        const jpg = sources.shift();
-        expect(jpg.srcset).to.match(
-          /\/img\/posts\/hello-world\/\w+-1920w.jpg 1920w, \/img\/posts\/hello-world\/\w+-1280w.jpg 1280w, \/img\/posts\/hello-world\/\w+-640w.jpg 640w, \/img\/posts\/hello-world\/\w+-320w.jpg 320w/
+        const png = sources.shift();
+        expect(png.srcset).to.match(
+          /\/img\/posts\/hello-world\/\w+-1920w.png 1920w, \/img\/posts\/hello-world\/\w+-1280w.png 1280w, \/img\/posts\/hello-world\/\w+-640w.png 640w, \/img\/posts\/hello-world\/\w+-320w.png 320w/
         );
         expect(webp.srcset).to.match(
           /\/img\/posts\/hello-world\/\w+-1920w.webp 1920w, \/img\/posts\/hello-world\/\w+-1280w.webp 1280w, \/img\/posts\/hello-world\/\w+-640w.webp 640w, \/img\/posts\/hello-world\/\w+-320w.webp 320w/
@@ -145,10 +145,10 @@ describe("check build output for a generic post", () => {
         expect(avif.srcset).to.match(
           /\/img\/posts\/hello-world\/\w+-1920w.avif 1920w, \/img\/posts\/hello-world\/\w+-1280w.avif 1280w, \/img\/posts\/hello-world\/\w+-640w.avif 640w, \/img\/posts\/hello-world\/\w+-320w.avif 320w/
         );
-        expect(jpg.type).to.equal("image/jpeg");
+        expect(png.type).to.equal("image/png");
         expect(webp.type).to.equal("image/webp");
         //expect(avif.type).to.equal("image/avif");
-        expect(jpg.sizes).to.equal("(max-width: 608px) 100vw, 608px");
+        expect(png.sizes).to.equal("(max-width: 608px) 100vw, 608px");
         expect(webp.sizes).to.equal("(max-width: 608px) 100vw, 608px");
         expect(img.height).to.match(/^\d+$/);
         expect(img.width).to.match(/^\d+$/);
