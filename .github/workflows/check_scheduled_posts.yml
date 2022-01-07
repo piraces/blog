@@ -16,6 +16,7 @@ jobs:
         shell: bash
         id: schedule-check
         run: |
+          chmod +x detectScheduledPosts.sh
           ./detectScheduledPosts.sh
           if [ $? -eq 42 ]; then
             echo 'There is an scheduled post! Will publish the blog...'
