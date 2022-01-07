@@ -7,8 +7,8 @@ do
    scheduled_time=$(cat $i | grep 'scheduled:' | cut -d ' ' -f 2)
    d1=$(date -d "now" +%s)
    d2=$(date -d "$scheduled_time" +%s)
-   days=$(( (d2 - d1) / 86400 )) # 86400 seconds in a day
-   if [ $days -le 0 ]; then
+   difference=$((d2 - d1))
+   if [ $difference -le 0 ]; then
     exit 42
    else
     exit 0
