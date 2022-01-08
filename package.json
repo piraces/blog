@@ -13,7 +13,7 @@
     "debug": "DEBUG=* eleventy && npm run test",
     "test": "mocha test/test*.js",
     "test-watch": "mocha test/test*.js --watch",
-    "clean": "rimraf ./_site/posts/*"
+    "clean": "rimraf ./_site/posts/* && rimraf ./_site/short-bits/*"
   },
   "pre-commit": [],
   "repository": {

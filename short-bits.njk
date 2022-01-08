@@ -1,0 +1,25 @@
+---
+title: Short bits!
+layout: layouts/base.njk
+description: Short bits of useful information that could interest you.
+date: Last Modified
+image: img/short-bits/default.png
+pagination:
+  data: collections.shortbits
+  size: 10
+  alias: shortbits
+  reverse: true
+eleventyNavigation:
+  key: Short bits
+  order: 4
+permalink: /short-bits/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}
+---
+
+<div id="posts">
+  <h3>Infomation pills</h3>
+  {% set postslist = shortbits %}
+  {% include "shortslist.njk" %}
+</div>
+{% set content = shortbits %}
+{% set paginationSlug = "short-bits/" %}
+{% include "pagination_control.njk" %}
