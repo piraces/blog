@@ -6,8 +6,12 @@ image: ../../img/developments/development.png
 templateClass: tmpl-post
 eleventyNavigation:
   key: Developments
-  order: 4
+  order: 5
 ---
+
+* [ Shortalink ](#shortalink)
+
+* [ tldr pages browser extension ](#tldr-pages-browser-extension)
 
 * [ Azure DevOps Bicep Tasks ](#azure-devops-bicep-tasks)
 
@@ -44,6 +48,37 @@ eleventyNavigation:
 * [ WallaLinks! ](#wallaLinks)
 
 * [ WallaPet ](#wallapet)
+
+-----------
+
+## Shortalink
+
+**Custom link shortener service using Cloudflare Workers + KV store one of my domains (privacy first focused)**
+
+This project is privacy friendly, nothing but the URL and necessary data for rate limit are collected, and after a time discarded (except for the URL if it is fair usage).
+
+This API is easily consumed programmatically, such as through shell functions, making it trivial to shorten links on the fly. It is console / cURL friendly.
+The browser frontend is available in GitHub Pages in [https://go.shorta.link/](https://go.shorta.link/).
+
+[View source code](https://github.com/piraces/shorta.link)
+[View the project live in shorta.link](https://shorta.link/)
+
+-----------
+
+## tldr pages browser extension
+
+**📚 A browser extension for [tldr-pages](https://github.com/tldr-pages/tldr). Compatible with Chromium based browsers and Firefox.**
+
+How it works:
+- Highlight and right click a command (or right click a link) on your webpage and select "tldr-pages" in the dropdown a tooltip should appear with information fetched from the "tldr-pages" project (https://github.com/tldr-pages/tldr).
+
+The extension is published in the official marketplaces for the following browsers:
+
+- For Edge: [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/tldr-pages/hbplonhehblpcghgkhnjepdbohbpkoak)
+- For Chrome: [in the Chrome Store](https://chrome.google.com/webstore/detail/tldr-pages/fcccijijdgmmcjnifgdhcmepnkcdingf).
+- For Firefox: [Firefox Browser Add-ons](https://addons.mozilla.org/es/firefox/addon/tldr-pages/).
+
+[View project](https://github.com/piraces/dotnex)
 
 -----------
 
