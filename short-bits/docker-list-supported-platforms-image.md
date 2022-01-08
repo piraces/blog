@@ -4,6 +4,7 @@ title: How to get supported platforms for docker image with docker
 description: <pre>docker run --rm mplatform/mquery [IMAGE]:[TAG]</pre><pre>docker run --rm mplatform/mquery python:latest</pre>
 image: ../../img/short-bits/default.png
 short: true
+tweet: docker run --rm mplatform/mquery [IMAGE]:[TAG]\ndocker run --rm mplatform/mquery python:latest
 date: 2022-01-07
 templateClass: tmpl-post
 ---

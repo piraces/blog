@@ -4,6 +4,7 @@ title: Create a QR code with curl
 description: <pre>curl qrenco.de/:[CONTENT]</pre><pre>curl qrenco.de/https://piraces.dev</pre>
 image: ../../img/short-bits/default.png
 short: true
+tweet: curl qrenco.de/:[CONTENT]\ncurl qrenco.de/https://piraces.dev
 date: 2022-01-08
 templateClass: tmpl-post
 ---

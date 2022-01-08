@@ -3,6 +3,7 @@
     <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     <br>
     <time class="small" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <input class="tweet" type="hidden" value="{{ post.data.tweet }}">
     <p>{{ post.data.description | safe }}</p>
   </div>
 {% endfor %}
