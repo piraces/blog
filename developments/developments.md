@@ -11,6 +11,8 @@ eleventyNavigation:
 
 * [ Shortalink ](#shortalink)
 
+* [ Twitter Bots ](#twitter-bots)
+
 * [ tldr pages browser extension ](#tldr-pages-browser-extension)
 
 * [ Azure DevOps Bicep Tasks ](#azure-devops-bicep-tasks)
@@ -62,6 +64,19 @@ The browser frontend is available in GitHub Pages in [https://go.shorta.link/](h
 
 [View source code](https://github.com/piraces/shorta.link)
 [View the project live in shorta.link](https://shorta.link/)
+
+-----------
+
+## Twitter Bots
+
+**A series of Twitter bots with different purposes 👾**
+
+- **Azure Updates Bot (@AzureUpdatesBot):** posts the latest Azure updates from the oficial Azure feed ([https://azure.microsoft.com/en-us/updates/](https://azure.microsoft.com/en-us/updates/)).
+
+- **Short Bits! (@short_bits):** Short bits! are short infomation pills for tech people / geeks / nerds that will find them interersing. The information is extracted from [https://piraces.dev/short-bits/](https://piraces.dev/short-bits/).
+
+[Azure Updates Bot (@AzureUpdatesBot)](https://twitter.com/AzureUpdatesBot)
+[Short Bits! Bot (@short_bits)](https://twitter.com/short_bits)
 
 -----------
 
