@@ -15,7 +15,7 @@ Docker provides a simple script to get started installing the Docker CE engine i
 ***Note:** please check before if your Linux distro is supported [here](https://docs.docker.com/engine/install/#server). Also ensure you don't have it installed from your distro packages repository.*
 
 In this way, Docker it is as simple to install as executing the following command:
-```sh
+```bash
 curl -sSL https://get.docker.com | sh
 
 ```
@@ -26,7 +26,7 @@ As Docker team says:
 
 ⚠ **Warning:** It is dangerous to pipe an internet script to `sh` without reading it before, because of this I recommend the following approach:
 
-```sh
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 nano get-docker.sh # Verify the content is original and makes sense
 
