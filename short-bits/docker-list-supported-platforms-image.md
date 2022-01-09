@@ -5,7 +5,7 @@ description: <pre>docker run --rm mplatform/mquery [IMAGE]:[TAG]</pre><pre>docke
 image: ../../img/short-bits/default.png
 short: true
 tweet: docker run --rm mplatform/mquery [IMAGE]:[TAG]\ndocker run --rm mplatform/mquery python:latest
-date: 2022-01-07
+date: 2022-01-08
 templateClass: tmpl-post
 ---
 

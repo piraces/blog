@@ -5,7 +5,7 @@ description: <pre>curl qrenco.de/:[CONTENT]</pre><pre>curl qrenco.de/https://pir
 image: ../../img/short-bits/default.png
 short: true
 tweet: curl qrenco.de/:[CONTENT]\ncurl qrenco.de/https://piraces.dev
-date: 2022-01-08
+date: 2022-01-07
 templateClass: tmpl-post
 ---
 

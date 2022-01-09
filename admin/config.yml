@@ -21,8 +21,6 @@ collections:
       - { label: "Image", name: "image", widget: string, default: "../../img/posts/HERE" }
       - { label: "Layout", name: "layout", widget: string, default: "layouts/post.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
-
-collections:
   - label: "Short bits" 
     name: "shorts"
     folder: "short-bits"
@@ -37,3 +35,4 @@ collections:
       - { label: "Image", name: "image", widget: string, default: "../../img/short-bits/default.png" }
       - { label: "Template class", name: "templateClass", widget: "string", default: "tmpl-post" }
       - { label: "Body", name: "body", widget: "markdown" }
+  
