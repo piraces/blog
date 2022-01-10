@@ -54,12 +54,14 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const pluginPWA = require("@piraces/eleventy-plugin-pwa");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 const { cspDevMiddleware } = require("./_11ty/apply-csp.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addPlugin(require("./_11ty/img-dim.js"));
   eleventyConfig.addPlugin(require("./_11ty/json-ld.js"));
@@ -67,6 +69,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("./_11ty/apply-csp.js"));
   eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.setDataDeepMerge(true);
+
+  // Compatibility with eleventy prior to 1.0.0
+  eleventyConfig.setLiquidOptions({ strictFilters: false, dynamicPartials: false });
+
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addNunjucksAsyncFilter(
     "addHash",
@@ -138,6 +144,10 @@ module.exports = function (eleventyConfig) {
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
+  eleventyConfig.addShortcode("currentYear", () =>{
+    return `${new Date().getFullYear()}`;
   });
 
   eleventyConfig.addFilter("sitemapDateTimeString", (dateObj) => {
