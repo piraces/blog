@@ -167,7 +167,7 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
   eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi.getFilteredByTag("posts");
+    return collectionApi.getFilteredByTag("posts").sort((a, b) => b.date - a.date);;
   });
   eleventyConfig.addCollection("shortbits", require("./_11ty/getShortBitsList"));
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));

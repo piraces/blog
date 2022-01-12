@@ -6,7 +6,7 @@ description: <p>Just execute the following command</p><pre>curl -sSL
 tweet: Simply execute the following command (and ensure you don't have docker
   already installed)\ncurl -sSL https://get.docker.com | sh
 short: true
-date: 2022-01-10T17:59:00.000Z
+date: 2022-01-10
 image: ../../img/short-bits/default.png
 templateClass: tmpl-post
 ---

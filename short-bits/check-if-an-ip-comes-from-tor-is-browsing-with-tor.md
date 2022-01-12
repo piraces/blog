@@ -8,7 +8,7 @@ tweet: Simply execute the following command\ncurl -sSL
   https://check.torproject.org/torbulkexitlist | grep [IP]\nOr check it in
   https://metrics.torproject.org/exonerator.html
 short: true
-date: 2022-01-11T17:46:11.610Z
+date: 2022-01-11
 image: ../../img/short-bits/default.png
 templateClass: tmpl-post
 ---

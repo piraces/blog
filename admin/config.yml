@@ -14,7 +14,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", format: "YYYY-MM-DD"  }
       - { label: "Scheduled", name: "scheduled", widget: "datetime", required: false, date_format: "YYYY-MM-DD" }
       - { label: "Draft", name: "draft", required: false, widget: "boolean" }
       - { label: "Tags", name: "tags", widget: list, default: ["post"] }
@@ -31,7 +31,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tweet", name: "tweet", widget: "string" }
       - { label: "Short", name: "short", widget: "boolean", default: true }
-      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", format: "YYYY-MM-DD" }
       - { label: "Image", name: "image", widget: string, default: "../../img/short-bits/default.png" }
       - { label: "Template class", name: "templateClass", widget: "string", default: "tmpl-post" }
       - { label: "Body", name: "body", widget: "markdown" }
