@@ -10,9 +10,12 @@ eleventyNavigation:
   order: 6
 ---
 
-<form action="https://www.google.com/search" method="get" class="search">
-  <input type="hidden" name="q" id="q" value="site:https://piraces.dev">
+<form action="javascript:void(0);">
   <label for="search-str">Search <small></label>
   <input type="text" name="q" id="search-str"></p>
-  <button type="submit" class="submit">Search with Google</button>
 </form>
+
+<div id="posts">
+  <ul id="resultList">
+  </ul>
+</div>
