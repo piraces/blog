@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-upgrade-help": "^1.0.1",
-    "clean-css": "^5.2.2",
+    "clean-css": "^5.2.3",
     "concurrently": "^7.0.0",
     "csp-hash-generator": "0.0.3",
     "csso": "^5.0.2",
