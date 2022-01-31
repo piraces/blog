@@ -67,7 +67,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("./_11ty/json-ld.js"));
   eleventyConfig.addPlugin(require("./_11ty/optimize-html.js"));
   eleventyConfig.addPlugin(require("./_11ty/apply-csp.js"));
-  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA, {
+    globPatterns: [
+      "**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}"
+    ],
+    runtimeCaching: [
+        {
+            urlPattern: /^.*\.(html|css|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
+            handler: 'NetworkFirst',
+        },
+        {
+            urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
+            handler: 'StaleWhileRevalidate',
+        }
+    ]
+  });
   eleventyConfig.setDataDeepMerge(true);
 
   // Compatibility with eleventy prior to 1.0.0

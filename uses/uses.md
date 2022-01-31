@@ -14,24 +14,24 @@ Based on the page [uses.tech](https://uses.tech/) where you can find more of the
 
 ## Hardware
 
-- Windows 10 laptop with second screen.
-- Mechanical Keyboard [Anne Pro II](https://www.annepro.net/products/anne-pro-2) black (Gateron Red switch).
+- Windows 11 laptop with second screen.
+- Mechanical Keyboard.
 
 ## Development
 
 - Main IDE for .NET based projects: [Rider](https://www.jetbrains.com/rider/)
 - Web development IDE: [WebStorm](https://www.jetbrains.com/webstorm/)
 - Other developments editor: [VS Code](https://code.visualstudio.com/)
-- Terminal: [Windows Terminal](https://github.com/microsoft/terminal) with [Starship](https://starship.rs/) (also WSL2 with zsh and [oh-my-zsh](https://ohmyz.sh/))
-- Main browser: [Edge DEV](https://www.microsoftedgeinsider.com/en-us/welcome)
+- Terminal: [Windows Terminal](https://github.com/microsoft/terminal) with [Oh My Posh](https://ohmyposh.dev/) (also WSL2 with zsh and [oh-my-zsh](https://ohmyz.sh/))
+- Main browser: [Edge](https://www.microsoft.com/en-us/edge)
 - Secondary browser: [Firefox](https://www.mozilla.org/en-US/firefox/)
 - Theme: [Dracula](https://draculatheme.com/)
 
 
 ## Other Software
 
-- Note taking, To-do list, some short docs: [Notion](https://www.notion.so/)
-- Passwords: [Keepass](https://keepass.info/)
+- Note taking, To-do list, some short docs: [Obsidian](https://obsidian.md/)
+- Passwords: [Bitwarden](https://bitwarden.com/)
 - Kubernetes: [Lens](https://k8slens.dev/)
 - Package managers: 
     - [Winget](https://github.com/microsoft/winget-cli)
