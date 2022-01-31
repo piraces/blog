@@ -80,7 +80,8 @@ module.exports = function (eleventyConfig) {
             urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
             handler: 'StaleWhileRevalidate',
         }
-    ]
+    ],
+    cleanupOutdatedCaches: true
   });
   eleventyConfig.setDataDeepMerge(true);
 
