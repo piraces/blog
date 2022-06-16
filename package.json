@@ -27,7 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-navigation": "^0.3.3",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@piraces/eleventy-plugin-pwa": "^1.1.2",
     "file-type": "^17.1.2",
