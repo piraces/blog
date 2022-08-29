@@ -33,7 +33,7 @@
     "file-type": "^18.0.0",
     "fs-extra": "^10.1.0",
     "jsdom": "^20.0.0",
-    "luxon": "^3.0.1",
+    "luxon": "^3.0.2",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.4",
     "node-fetch": "^3.2.10",
