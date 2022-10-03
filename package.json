@@ -32,7 +32,7 @@
     "@piraces/eleventy-plugin-pwa": "^1.1.2",
     "file-type": "^18.0.0",
     "fs-extra": "^10.1.0",
-    "jsdom": "^20.0.0",
+    "jsdom": "^20.0.1",
     "luxon": "^3.0.4",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.5",
