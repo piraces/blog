@@ -28,7 +28,7 @@
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@piraces/eleventy-plugin-pwa": "^1.1.2",
     "file-type": "^18.0.0",
     "fs-extra": "^10.1.0",
