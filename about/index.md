@@ -43,6 +43,7 @@ Or...
 
 ## Others
 
-- [PGP Public Key](https://keybase.io/piraces/pgp_keys.asc)
+- [KeyOxide](https://keyoxide.org/84BF523F3F3EFA760C3E2C0C0C1A484B87269CD7)
+- [Keybase](https://keybase.io/piraces/pgp_keys.asc)
 - [Mail](mailto:raul@piraces.dev)
 - [RSS Feed (this blog)](https://piraces.dev/feed/feed.xml)
