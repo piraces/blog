@@ -13,7 +13,10 @@ const isDev = require("../_data/isdevelopment")();
  */
 
 describe("Draft posts", () => {
-  if (isDev) this.skip();
+  if (isDev) {
+    console.log("Skipping test because in dev mode drafts are written out.");
+    return;
+  }
   describe("draft post", () => {
     const DRAFT_POST = "_site/posts/draft_sample/index.html";
     
