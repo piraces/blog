@@ -1,4 +1,4 @@
-name: Publish to Netlify
+name: Publish to Cloudflare pages
 on:
   push:
     branches: [ main ]
@@ -26,22 +26,14 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@df95b37410772819dfb0c117b00931101664b159
+      - name: Cloudflare Pages GitHub Action
+        uses: cloudflare/pages-action@v1.2.0
         with:
-          publish-dir: './_site'
-          production-branch: main
-          production-deploy: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Deploy from GitHub Actions"
-          enable-pull-request-comment: false
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
-          netlify-config-path: ./netlify.toml
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: '46c391370bbf0010bf0d5f4bbc237435'
+          projectName: 'blog'
+          directory: './_site'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
     
       - name: Upload deployment artifact
         uses: actions/upload-artifact@v2.2.3
