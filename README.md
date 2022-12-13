@@ -1,7 +1,7 @@
 # piraces.dev Blog
 
 ![CI](https://github.com/piraces/blog/workflows/CI/badge.svg)
-![Publish to Netlify](https://github.com/piraces/blog/workflows/Publish%20to%20Netlify/badge.svg)
+[![Publish to Cloudflare pages](https://github.com/piraces/blog/actions/workflows/main.yml/badge.svg)](https://github.com/piraces/blog/actions/workflows/main.yml)
 ![IPFS](https://img.shields.io/badge/IPFS-Available-brightgreen?logo=ipfs)
 
 Blog for [piraces.dev](https://piraces.dev/), made with the [Eleventy static site generator](https://www.11ty.dev/) implementing a wide range of performance best practices (using the template [google/eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog)).
