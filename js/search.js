@@ -2,7 +2,6 @@ var results = [];
 var input = document.querySelector('#search-str');
 if (input) {
     input.addEventListener('keyup', function(_) {
-        let searchIndex;
         let searchString = input.value;
         results = [];
         fetch('/search.json').then(function(response) {

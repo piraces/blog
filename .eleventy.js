@@ -59,6 +59,8 @@ const CleanCSS = require("clean-css");
 const pluginPWA = require("@piraces/eleventy-plugin-pwa");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 const { cspDevMiddleware } = require("./_11ty/apply-csp.js");
+const { partytownSnippet } = require('@builder.io/partytown/integration');
+const { copyLibFiles } = require('@builder.io/partytown/utils');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -217,6 +219,11 @@ module.exports = function (eleventyConfig) {
 
     return array.slice(0, n);
   });
+
+  eleventyConfig.addShortcode("partytown", function() {
+    return partytownSnippet();
+  });
+
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByTag("posts").sort((a, b) => b.date - a.date);;
   });
@@ -272,7 +279,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Run me before the build starts
-  eleventyConfig.on("beforeBuild", () => {
+  eleventyConfig.on("beforeBuild", async () => {
     // Copy _header to dist
     // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
     try {
@@ -285,6 +292,8 @@ module.exports = function (eleventyConfig) {
         error
       );
     }
+    // Copy partytown needed files
+    await copyLibFiles('./_site/~partytown');
   });
 
   // After the build touch any file in the test directory to do a test run.

@@ -42,7 +42,7 @@ const CSP = {
     // Images may also come from data-URIs.
     ["img-src", SELF, "data:", "https://gh-card.dev", "blob:"],
     // connect-src to allow some connections to APIs
-    ["connect-src", SELF, 'https://stats.piraces.co/', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", "blob:", "https://www.netlifystatus.com"],
+    ["connect-src", SELF, 'https://stats.piraces.co', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", "blob:", "https://www.netlifystatus.com"],
     // frame-ancestors to allow iframes from same origin
     ["frame-ancestors", SELF]
 
