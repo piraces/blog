@@ -233,13 +233,12 @@ BUGS:
   is provided in a @font-face declaration.
   Workaround: Use "Inter UI var alt" for Safari, or explicitly set
   `font-variation-settings:"slnt" DEGREE`.
-*/
+
 @font-face {
-  font-family: "Inter UI";
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
+  
 }
+
+*/
 
 /*
 
@@ -275,6 +274,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: Geneva, Verdana, sans-serif;
 }
 body {
   margin: 0;
@@ -694,8 +694,8 @@ dt {
   }
 }
 html {
-  font-family: Inter UI, sans-serif;
-  --font-family: Inter UI, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
+  --font-family: Geneva, Verdana, sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
