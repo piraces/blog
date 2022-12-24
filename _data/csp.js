@@ -36,13 +36,13 @@ const CSP = {
     // No plugins
     ["object-src", quote("none")],
     // Script from same-origin, inline-hashes and unsafe-eval
-    ["script-src", SELF, 'https://stats.piraces.co/', 'https://cdn.jsdelivr.net', 'https://unpkg.com', 'https://identity.netlify.com', 'https://giscus.app', quote("unsafe-eval"), /* Replaced by csp.js plugin */ "HASHES"],
+    ["script-src", SELF, 'https://stats.piraces.co/', 'https://cdn.jsdelivr.net', 'https://unpkg.com', 'https://giscus.app', quote("unsafe-eval"), /* Replaced by csp.js plugin */ "HASHES"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
     ["img-src", SELF, "data:", "https://gh-card.dev", "blob:"],
     // connect-src to allow some connections to APIs
-    ["connect-src", SELF, 'https://stats.piraces.co', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", "blob:", "https://www.netlifystatus.com"],
+    ["connect-src", SELF, 'https://stats.piraces.co', 'https://cdn.jsdelivr.net', "https://api.hackertarget.com", "blob:"],
     // frame-ancestors to allow iframes from same origin
     ["frame-ancestors", SELF]
 
