@@ -129,7 +129,7 @@ _**Note:** change the `pathPrefix` accordingly to the path you want._
 
 In this tutorial we will be using GitHub Pages to host our twitter archive, so since in my case I have the domain `piraces.dev` managed by [Cloudflare](https://www.cloudflare.com/), I will create a subdomain called `tweets.piraces.dev` to point to the GitHub pages deployment.
 
-To do this we will only have to create a `CNAME` DNS record with the value of the subdomain (`tweets` in this case) pointing to your GitHub domain that will be in the format `{{GITHUB_HANDLE}}.github.io` where `{{GITHUB_HANDLE}}` will be your handle/username in GitHub (`piraces.github.io` in my case).
+To do this we will only have to create a `CNAME` DNS record with the value of the subdomain (`tweets` in this case) pointing to your GitHub domain that will be in the format `GITHUB_HANDLE.github.io` where `GITHUB_HANDLE` will be your handle/username in GitHub (`piraces.github.io` in my case).
 
 <div align="center">
 
