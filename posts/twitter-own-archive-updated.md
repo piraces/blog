@@ -173,32 +173,32 @@ To do so, we must follow this steps:
     name: Publish page
 
     on:
-    push:
+      push:
         branches: [ "main" ] # Change this to the name of the main branch of your repository
-    workflow_dispatch: # Setting this enables the possibility to run the workflow manually
+      workflow_dispatch: # Setting this enables the possibility to run the workflow manually
 
     jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v3
-        - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-            node-version: 18.x
-        - run: npm ci # Note that you must commit the package-lock.json to the repo and quit it from the .gitignore file
-        - run: npm run build
-        - name: Deploy to Github Pages
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-            # Build directory to deploy
-            build_dir: _site
-            # Write the given domain name to the CNAME file
-            fqdn: tweets.piraces.dev # Change this to your configured subdomain or completely delete the line if not using it.
-            jekyll: false
-            keep_history: true # If you don't want to preserve a commit history, set to false to perform a git push --force
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }} # This secret is available by default
+      build:
+          runs-on: ubuntu-latest
+          steps:
+          - uses: actions/checkout@v3
+          - name: Use Node.js 18.x
+            uses: actions/setup-node@v3
+            with:
+                node-version: 18.x
+          - run: npm ci # Note that you must commit the package-lock.json to the repo and quit it from the .gitignore file
+          - run: npm run build
+          - name: Deploy to Github Pages
+            uses: crazy-max/ghaction-github-pages@v3
+            with:
+              # Build directory to deploy
+              build_dir: _site
+              # Write the given domain name to the CNAME file
+              fqdn: tweets.piraces.dev # Change this to your configured subdomain or completely delete the line if not using it.
+              jekyll: false
+              keep_history: true # If you don't want to preserve a commit history, set to false to perform a git push --force
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }} # This secret is available by default
     ```
 
 5. When finishing editing, click on "Start commit" and commit the workflow to the main branch. The workflow will start running after the commit, you can check the status from the "Actions tab" in the GitHub repository page.
@@ -243,7 +243,7 @@ Follow then this steps:
     ```yaml
     ...
     - run: npm run fetch-new-data
-    env:
+      env:
         TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }} # Change the secret name if different
     ```
 
@@ -264,37 +264,37 @@ Follow then this steps:
     name: Fetch new data & publish page
 
     on:
-    push:
-        branches: [ "main" ]
-    schedule:
-        - cron: "30 0 * * *"
-    workflow_dispatch:
+      push:
+          branches: [ "main" ]
+      schedule:
+          - cron: "30 0 * * *"
+      workflow_dispatch:
 
     jobs:
-    build:
+      build:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v3
         - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-            node-version: 18.x
+          uses: actions/setup-node@v3
+          with:
+              node-version: 18.x
         - run: npm ci
         - run: npm run fetch-new-data
-        env:
-            TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          env:
+            TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }} # Here the secret TWITTER_BEARER_TOKEN
         - run: npm run build
         - name: Deploy to Github Pages
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
+          uses: crazy-max/ghaction-github-pages@v3
+          with:
             # Build directory to deploy
             build_dir: _site
             # Write the given domain name to the CNAME file
             fqdn: tweets.piraces.dev
             jekyll: false
             keep_history: true
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Here the secret GITHUB_TOKEN
     ``` 
 
 6. Save your workflow, commit and push it.
