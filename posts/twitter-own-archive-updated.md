@@ -1,8 +1,7 @@
 ---
 title: Take ownership of your Twitter data, set-up your own Twitter updated archive in GitHub
-description: Who knows what could happen with your tweets? Due to the recent events regarding Twitter and the data you have generated in this platform, you may
-want to self-host your own Twitter archive in order to preserve your data for the future (even if you keep using it).
-date: 2022-01-02
+description: Who knows what could happen with your tweets? Due to the recent events regarding Twitter and the data you have generated in this platform, you may want to self-host your own Twitter archive in order to preserve your data for the future (even if you keep using it).
+date: 2023-01-02
 tags:
   - twitter
   - github
@@ -32,7 +31,7 @@ Thanks to [Zach Leatherman](https://zachleat.com/@zachleat) and its awesome proj
 
 The process to make your own archive is simple. Just follow the steps below.
 
-## Getting your Twitter archive in first place
+### Getting your Twitter archive in first place
 
 This part is important to initialize our archive.
 Twitter allows you to export a backup of all of your data you have in this platform. 
@@ -63,7 +62,7 @@ After taking this action, Twitter will collect your data and send you an email w
  
 _**Note:** don't forget to download the `.zip` file as soon as you receive the email and save it somewhere (as the links expires shortly)._
 
-## Getting the [Tweetback](https://github.com/tweetback/tweetback) code and setting it up
+### Getting the [Tweetback](https://github.com/tweetback/tweetback) code and setting it up
 
 In my case [I just forked the repository](https://github.com/piraces/twitter_archive) but you can clone it and upload it to other site if you want.
 
@@ -112,7 +111,7 @@ Then follow this steps:
 
 9. If everything looks good for you, commit and push your changes to the repository.
 
-## (Optional) Set the subpath where your page will reside
+### (Optional) Set the subpath where your page will reside
 
 You can skip this step if your twitter archive will be in the root of a domain/subdomain (such as [tweets.piraces.dev](https://tweets.piraces.dev/)), otherwise we will have to set the subpath where it will be served (for example if hosting in GitHub pages such as `piraces.github.io/tweets`).
 
@@ -126,7 +125,7 @@ To do this, we will need to do some changes to the `eleventy.config.js` file as 
 
 _**Note:** change the `pathPrefix` accordingly to the path you want._
 
-## (Optional) Configuring a subdomain to point to our GitHub Pages deployment
+### (Optional) Configuring a subdomain to point to our GitHub Pages deployment
 
 In this tutorial we will be using GitHub Pages to host our twitter archive, so since in my case I have the domain `piraces.dev` managed by [Cloudflare](https://www.cloudflare.com/), I will create a subdomain called `tweets.piraces.dev` to point to the GitHub pages deployment.
 
@@ -141,7 +140,7 @@ To do this we will only have to create a `CNAME` DNS record with the value of th
 
 The picture above shows how to set it for Cloudflare, but it will be very similar in other providers.
 
-## Deploying our archive using GitHub pages
+### Deploying our archive using GitHub pages
 
 Once our repo has all the changes mentioned above, we will have to configure GitHub pages for our repository.
 To do so, we must follow this steps:
@@ -207,7 +206,7 @@ To do so, we must follow this steps:
 6. If the workflow shows green (all steps are OK), go and check your URL and see your Twitter archive 🎉 (note, if something goes wrong with your configured subdomain, please revisit step 3).
 
 
-## (Optional) Setting an scheduled action to update our archive
+### (Optional) Setting an scheduled action to update our archive
 
 If you may still using Twitter in the future, consider modifying the workflow created in the previous step to fetch all new tweets using the Twitter API.
 
@@ -307,7 +306,7 @@ Follow then this steps:
     _**Note:** if you have any doubts regarding code/workflows you can always check my Twitter archive implementation: [GitHub - piraces/twitter_archive](https://github.com/piraces/twitter_archive/)._
 
 
-## (Optional) Adding your archive to [tweetback-canonical](https://github.com/tweetback/tweetback-canonical) (list of hosted Twitter backups)
+### (Optional) Adding your archive to [tweetback-canonical](https://github.com/tweetback/tweetback-canonical) (list of hosted Twitter backups)
 
 [tweetback-canonical](https://github.com/tweetback/tweetback-canonical) is a package to resolve twitter URLs to new canonically hosted twitter backups, 
 made by [Zach Leatherman](https://zachleat.com/@zachleat) too.
