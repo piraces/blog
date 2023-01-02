@@ -34,14 +34,16 @@ Or...
 <a href="/labs/">See some experiments I have done 😃 (just for fun)</a>
 
 
-## Social Networks
+### Social Networks
 
 - [Twitter](https://twitter.com/piraces_)
 - [Dev.to](https://dev.to/piraces)
 - [GitHub](https://github.com/piraces)
 - [StackOverflow](https://stackoverflow.com/users/4064162/piraces)
+- [Mastodon](https://hachyderm.io/@piraces)
+- [Nostr](https://nostr.directory/p/npub1ftpy6thgy2354xypal6jd0m37wtsgsvcxljvzje5vskc9cg3a5usexrrtq)
 
-## Others
+### Others
 
 - [KeyOxide](https://keyoxide.org/84BF523F3F3EFA760C3E2C0C0C1A484B87269CD7)
 - [Keybase](https://keybase.io/piraces/pgp_keys.asc)
