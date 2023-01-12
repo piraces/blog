@@ -31,7 +31,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@piraces/eleventy-plugin-pwa": "^1.1.2",
     "@rollup/plugin-terser": "^0.3.0",
-    "file-type": "^18.0.0",
+    "file-type": "^18.1.0",
     "fs-extra": "^11.1.0",
     "jsdom": "^21.0.0",
     "luxon": "^3.2.1",
