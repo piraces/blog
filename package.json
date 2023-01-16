@@ -44,7 +44,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^2.0.1",
+    "@11ty/eleventy-upgrade-help": "^2.0.2",
     "@builder.io/partytown": "^0.7.4",
     "clean-css": "^5.3.1",
     "concurrently": "^7.6.0",
