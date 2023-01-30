@@ -4,23 +4,5 @@
     "me": "4ac24d2ee822a34a9881eff526bf71f39704419837e4c14b34642d82e111ed39",
     "raul": "4ac24d2ee822a34a9881eff526bf71f39704419837e4c14b34642d82e111ed39",
     "piraces": "4ac24d2ee822a34a9881eff526bf71f39704419837e4c14b34642d82e111ed39"
-  },
-  "relays": {
-    "4ac24d2ee822a34a9881eff526bf71f39704419837e4c14b34642d82e111ed39": [
-      "wss://relay.nostr.moe",
-      "wss://nostr.developer.li",
-      "wss://nostr-pub.semisol.dev",
-      "wss://nostr.fmt.wiz.biz",
-      "wss://nostr.bitcoiner.social",
-      "wss://nostr.drss.io",
-      "wss://relay.damus.io",
-      "wss://relay.nostr.bg",
-      "wss://nostr.onsats.org",
-      "wss://brb.io",
-      "wss://relay.nostr.info",
-      "wss://nostr.zebedee.cloud",
-      "wss://nostr.ono.re",
-      "wss://nostr-relay.untethr.me"
-    ]
   }
 }
