@@ -22,7 +22,3 @@
   Content-Type: application/javascript; charset=utf-8
 /.well-known/webfinger
   Content-Type: application/jrd+json
-
-# [csp headers]
-# this text will be replaced by apply-csp.js plugin
-# [end csp headers]

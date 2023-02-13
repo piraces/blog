@@ -57,8 +57,6 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const pluginPWA = require("@piraces/eleventy-plugin-pwa");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-const { cspDevMiddleware } = require("./_11ty/apply-csp.js");
 const { partytownSnippet } = require('@builder.io/partytown/integration');
 const { copyLibFiles } = require('@builder.io/partytown/utils');
 
@@ -66,7 +64,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addPlugin(require("./_11ty/img-dim.js"));
   eleventyConfig.addPlugin(require("./_11ty/json-ld.js"));
@@ -258,39 +255,8 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  // Browsersync Overrides
-  eleventyConfig.setBrowserSyncConfig({
-    // read CSP headers from _headers file, add it to response
-    middleware: cspDevMiddleware,
-    callbacks: {
-      ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync("_site/404.html");
-
-        browserSync.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
-    ui: false,
-    ghostMode: false,
-  });
-
   // Run me before the build starts
-  eleventyConfig.on("beforeBuild", async () => {
-    // Copy _header to dist
-    // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
-    try {
-      const headers = fs.readFileSync("./_headers", { encoding: "utf-8" });
-      fs.mkdirSync("./_site", { recursive: true });
-      fs.writeFileSync("_site/_headers", headers);
-    } catch (error) {
-      console.log(
-        "[beforeBuild] Something went wrong with the _headers file\n",
-        error
-      );
-    }
+  eleventyConfig.on("beforeBuild", async () => { 
     // Copy partytown needed files
     await copyLibFiles('./_site/~partytown');
   });

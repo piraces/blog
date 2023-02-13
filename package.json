@@ -13,7 +13,7 @@
     "debug": "DEBUG=* eleventy && npm run test",
     "test": "mocha test/test*.js",
     "test-watch": "mocha test/test*.js --watch --watch-files=test/*",
-    "clean": "rimraf ./_site/posts/* && rimraf ./_site/short-bits/*"
+    "clean": "rimraf ./_site/posts/ && rimraf ./_site/short-bits/"
   },
   "pre-commit": [],
   "repository": {
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0-beta.1",
+    "@11ty/eleventy-dev-server": "^1.0.3",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
@@ -44,7 +45,6 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^2.0.5",
     "@builder.io/partytown": "^0.7.5",
     "clean-css": "^5.3.2",
     "concurrently": "^7.6.0",
@@ -62,7 +62,7 @@
     "purge-from-html": "^1.0.3",
     "purgecss": "^5.0.0",
     "querystring": "^0.2.1",
-    "rollup": "^3.9.0",
+    "rollup": "^3.15.0",
     "sharp": "^0.31.3",
     "touch": "^3.1.0",
     "twitter": "^1.7.1"
