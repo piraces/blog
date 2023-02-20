@@ -8,7 +8,7 @@
     "forwardPorts": [
         8080
     ],
-    "postCreateCommand": "npm i && npm run serve",
+    "postCreateCommand": "npm i && npm run js-build",
     "customizations": {
         "vscode": {
             "extensions": [
