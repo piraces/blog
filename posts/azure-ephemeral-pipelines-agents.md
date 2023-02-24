@@ -34,6 +34,8 @@ The agent that runs in the ACI its only a basic Docker image with the necessary 
 
 ---
 
+_**🚨🚨 Edit 25/02/2023🚨🚨:** the original project appears to be discontinued and archived by Microsoft. So it will no longer be maintained... We will have to look for other solutions such as allowing temporal access from agents to private resources or deploying self-hosted agents from a docker image by our own._
+
 **TL;DR:** The purpose of [this task](https://marketplace.visualstudio.com/items?itemName=tiago-pascoal.EphemeralPipelinesAgents) is to create a short-lived Azure Pipelines Agent to run a deploy in a private virtual network so we can deploy to Azure Resources that are not internet accessible.
 
 ⚠️ **Important:** This approach (and task) is currently in preview and has [known issues and limitations](https://github.com/microsoft/azure-pipelines-ephemeral-agents#known-issueslimitations). Please take this into account before proceeding to use this process.
