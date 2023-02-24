@@ -217,6 +217,10 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter("join", (array, character = ',') => {
+    return array.join(character);
+  });
+
   eleventyConfig.addShortcode("partytown", function() {
     return partytownSnippet();
   });
