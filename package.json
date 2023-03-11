@@ -41,7 +41,7 @@
     "node-fetch": "^3.3.0",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.4",
-    "rimraf": "^4.3.1",
+    "rimraf": "^4.4.0",
     "shorthash": "0.0.2"
   },
   "dependencies": {
