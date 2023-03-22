@@ -45,7 +45,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.7.5",
+    "@builder.io/partytown": "^0.7.6",
     "clean-css": "^5.3.2",
     "concurrently": "^7.6.0",
     "csp-hash-generator": "0.0.3",
