@@ -31,7 +31,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@piraces/eleventy-plugin-pwa": "^1.1.2",
-    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "file-type": "^18.5.0",
     "fs-extra": "^11.1.1",
     "jsdom": "^22.1.0",
@@ -62,7 +62,7 @@
     "purge-from-html": "^1.0.3",
     "purgecss": "^5.0.0",
     "querystring": "^0.2.1",
-    "rollup": "^3.20.2",
+    "rollup": "^4.0.0",
     "sharp": "^0.32.6",
     "touch": "^3.1.0",
     "twitter": "^1.7.1"
