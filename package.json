@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@builder.io/partytown": "^0.8.1",
-    "clean-css": "^5.3.2",
+    "clean-css": "^5.3.3",
     "concurrently": "^8.2.2",
     "csp-hash-generator": "0.0.3",
     "csso": "^5.0.5",
