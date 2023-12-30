@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Execute check for scheduled posts
         shell: bash
         id: schedule-check
@@ -25,9 +25,9 @@ jobs:
             echo 'No scheduled posts detected...'
           fi
 
-      - uses: passeidireto/trigger-external-workflow-action@main
+      - uses: convictional/trigger-workflow-and-wait@main
         if: ${{ steps.schedule-check.outputs.EXECUTE_WORKFLOW == 'true' }}
         with:
-          repository: piraces/blog
-          event: scheduled_post
-          github_pat: ${{ secrets.PAT }}
+          owner: piraces
+          repo: blog
+          github_token: ${{ secrets.PAT }}

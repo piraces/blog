@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Read .nvmrc
         id: node_version
         run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
 
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
           
@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
 
       - name: Cloudflare Pages GitHub Action
-        uses: cloudflare/pages-action@v1.2.0
+        uses: cloudflare/pages-action@v1.5.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: '46c391370bbf0010bf0d5f4bbc237435'
@@ -36,7 +36,7 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
     
       - name: Upload deployment artifact
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v4
         with:
           name: deployment
           path: ./_site
