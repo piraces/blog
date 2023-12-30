@@ -36,7 +36,7 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
     
       - name: Upload deployment artifact
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v4.0.0
         with:
           name: deployment
           path: ./_site
