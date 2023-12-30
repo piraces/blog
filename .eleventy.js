@@ -44,7 +44,6 @@ const { DateTime } = require("luxon");
 const { promisify } = require("util");
 const fs = require("fs");
 const path = require("path");
-const hasha = require("hasha");
 const touch = require("touch");
 const readFile = promisify(fs.readFile);
 const readdir = promisify(fs.readdir);
@@ -61,6 +60,12 @@ const { partytownSnippet } = require('@builder.io/partytown/integration');
 const { copyLibFiles } = require('@builder.io/partytown/utils');
 
 module.exports = function (eleventyConfig) {
+  let hasha;
+
+  eleventyConfig.on('eleventy.before', async ({}) => {
+    hasha = await import('hasha');
+  });
+
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -98,7 +103,7 @@ module.exports = function (eleventyConfig) {
         encoding: "utf-8",
       })
         .then((content) => {
-          return hasha.async(content);
+          return hasha.hash(content);
         })
         .then((hash) => {
           callback(null, `${absolutePath}?hash=${hash.substr(0, 10)}`);
