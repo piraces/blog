@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
 
       - name: Cloudflare Pages GitHub Action
-        uses: cloudflare/pages-action@v1.2.0
+        uses: cloudflare/pages-action@v1.5.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: '46c391370bbf0010bf0d5f4bbc237435'
