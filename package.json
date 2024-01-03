@@ -54,7 +54,7 @@
     "expect.js": "^0.3.1",
     "hasha": "^6.0.0",
     "html-minifier": "^4.0.0",
-    "image-size": "^1.1.0",
+    "image-size": "^1.1.1",
     "jimp": "^0.22.10",
     "lru-cache": "^10.1.0",
     "mocha": "^10.2.0",
