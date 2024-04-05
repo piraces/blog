@@ -58,7 +58,7 @@
     "jimp": "^0.22.12",
     "lru-cache": "^10.2.0",
     "mocha": "^10.3.0",
-    "phin": "^3.7.0",
+    "phin": "^4.0.0",
     "purge-from-html": "^1.0.3",
     "purgecss": "^6.0.0",
     "querystring": "^0.2.1",
