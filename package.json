@@ -63,7 +63,7 @@
     "purgecss": "^6.0.0",
     "querystring": "^0.2.1",
     "rollup": "^4.14.0",
-    "sharp": "^0.33.2",
+    "sharp": "^0.33.3",
     "touch": "^3.1.0",
     "twitter": "^1.7.1"
   }
