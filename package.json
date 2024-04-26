@@ -56,7 +56,7 @@
     "html-minifier": "^4.0.0",
     "image-size": "^1.1.1",
     "jimp": "^0.22.12",
-    "lru-cache": "^10.2.0",
+    "lru-cache": "^10.2.1",
     "mocha": "^10.4.0",
     "phin": "^4.0.0",
     "purge-from-html": "^1.0.3",
