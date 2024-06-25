@@ -40,8 +40,6 @@ Or...
 - [Dev.to](https://dev.to/piraces)
 - [GitHub](https://github.com/piraces)
 - [StackOverflow](https://stackoverflow.com/users/4064162/piraces)
-- [Mastodon](https://hachyderm.io/@piraces)
-- [Nostr](https://nostr.directory/p/npub1ftpy6thgy2354xypal6jd0m37wtsgsvcxljvzje5vskc9cg3a5usexrrtq)
 
 ### Others
 
