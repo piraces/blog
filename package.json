@@ -38,7 +38,7 @@
     "luxon": "^3.4.4",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",
-    "mocha": "^10.5.1",
+    "mocha": "^10.5.2",
     "node-fetch": "^3.3.2",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.4",
