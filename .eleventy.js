@@ -243,6 +243,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("manifest.webmanifest");
   eleventyConfig.addPassthroughCopy(".well-known");
+  eleventyConfig.addPassthroughCopy("giscus.json");
 
   // We need to rebuild upon JS change to update the CSP.
   eleventyConfig.addWatchTarget("./js/");
