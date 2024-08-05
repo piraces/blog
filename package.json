@@ -35,7 +35,7 @@
     "file-type": "^19.3.0",
     "fs-extra": "^11.2.0",
     "jsdom": "^24.1.1",
-    "luxon": "^3.4.4",
+    "luxon": "^3.5.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",
     "mocha": "^10.7.0",
