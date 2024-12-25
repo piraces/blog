@@ -40,7 +40,7 @@ if (location.search) {
 
 function tweet_(url) {
   open(
-    "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url),
+    "https://x.com/intent/tweet?url=" + encodeURIComponent(url),
     "_blank"
   );
 }

@@ -63,7 +63,7 @@ describe("check build output for a generic post", () => {
 
     it("should have script elements", () => {
       const scripts = doc.querySelectorAll("script[src]");
-      expect(scripts).to.have.length(4); // NOTE: update this when adding more <script>
+      expect(scripts).to.have.length(3); // NOTE: update this when adding more <script>
       expect(scripts[0].getAttribute("src")).to.match(
         /^\/js\/min\.js\?hash=\w+/
       );
@@ -94,11 +94,11 @@ describe("check build output for a generic post", () => {
       expect(select("article time", "datetime")).to.equal("2019-01-01");
     });
 
-    it("should link to twitter with noopener", () => {
-      const twitterLinks = Array.from(doc.querySelectorAll("a")).filter((a) =>
-        a.href.startsWith("https://twitter.com")
+    it("should link to x/twitter with noopener", () => {
+      const xLinks = Array.from(doc.querySelectorAll("a")).filter((a) =>
+        a.href.startsWith("https://x.com") || a.href.startsWith("https://twitter.com")
       );
-      for (let a of twitterLinks) {
+      for (let a of xLinks) {
         expect(a.rel).to.contain("noopener");
         expect(a.target).to.equal("_blank");
       }

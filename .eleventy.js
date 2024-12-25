@@ -55,7 +55,6 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
-const pluginPWA = require("@piraces/eleventy-plugin-pwa");
 const { partytownSnippet } = require('@builder.io/partytown/integration');
 const { copyLibFiles } = require('@builder.io/partytown/utils');
 
@@ -74,22 +73,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("./_11ty/json-ld.js"));
   eleventyConfig.addPlugin(require("./_11ty/optimize-html.js"));
   eleventyConfig.addPlugin(require("./_11ty/apply-csp.js"));
-  eleventyConfig.addPlugin(pluginPWA, {
-    globPatterns: [
-      "**/*.{html,css,js,mjs,map,jpg,png,gif,webp,ico,svg,woff2,woff,eot,ttf,otf,ttc,json}"
-    ],
-    runtimeCaching: [
-        {
-            urlPattern: /^.*\.(html|css|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
-            handler: 'NetworkFirst',
-        },
-        {
-            urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-            handler: 'StaleWhileRevalidate',
-        }
-    ],
-    cleanupOutdatedCaches: true
-  });
   eleventyConfig.setDataDeepMerge(true);
 
   // Compatibility with eleventy prior to 1.0.0

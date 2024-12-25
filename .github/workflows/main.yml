@@ -26,13 +26,12 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - name: Cloudflare Pages GitHub Action
-        uses: cloudflare/pages-action@v1.5.0
+      - name: Cloudflare Pages GitHub Action (Wrangler)
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: '46c391370bbf0010bf0d5f4bbc237435'
-          projectName: 'blog'
-          directory: './_site'
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./_site --project-name=blog
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
     
       - name: Upload deployment artifact

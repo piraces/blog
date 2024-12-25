@@ -25,12 +25,11 @@
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-dev-server": "^2.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@piraces/eleventy-plugin-pwa": "^1.1.2",
     "@rollup/plugin-terser": "^0.4.4",
     "file-type": "^19.6.0",
     "fs-extra": "^11.2.0",
@@ -46,7 +45,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.10.2",
+    "@builder.io/partytown": "^0.10.3",
     "clean-css": "^5.3.3",
     "concurrently": "^9.1.0",
     "csp-hash-generator": "0.0.3",
@@ -55,14 +54,14 @@
     "expect.js": "^0.3.1",
     "hasha": "^6.0.0",
     "html-minifier": "^4.0.0",
-    "image-size": "^1.1.1",
+    "image-size": "^1.2.0",
     "jimp": "^1.6.0",
     "lru-cache": "^11.0.2",
     "phin": "^3.7.1",
     "purge-from-html": "^1.0.3",
     "purgecss": "^7.0.2",
     "querystring": "^0.2.1",
-    "rollup": "^4.28.1",
+    "rollup": "^4.29.1",
     "sharp": "^0.33.5",
     "touch": "^3.1.1"
   }

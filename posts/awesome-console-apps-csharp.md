@@ -83,7 +83,7 @@ I felt the library easy to understand and use, with great support and documentat
 
 ### Gui.cs
 
-[gui.cs](https://github.com/migueldeicaza/gui.cs), its a simple (but complete and full of features) toolkit for buiding console GUI apps for .NET, .NET Core, and Mono that works on Windows, Mac, and Linux/Unix. Made by [Miguel de Icaza](https://twitter.com/migueldeicaza), actually working in Microsoft.
+[gui.cs](https://github.com/migueldeicaza/gui.cs), its a simple (but complete and full of features) toolkit for buiding console GUI apps for .NET, .NET Core, and Mono that works on Windows, Mac, and Linux/Unix. Made by [Miguel de Icaza](https://x.com/migueldeicaza), actually working in Microsoft.
 
 In this case this toolkit I feel like it is oriented for more complex console apps trying to expose some UI for its users.
 

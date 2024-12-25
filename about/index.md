@@ -36,7 +36,7 @@ Or...
 
 ### Social Networks
 
-- [Twitter](https://twitter.com/piraces_)
+- [X](https://x.com/piraces_)
 - [Dev.to](https://dev.to/piraces)
 - [GitHub](https://github.com/piraces)
 - [StackOverflow](https://stackoverflow.com/users/4064162/piraces)
