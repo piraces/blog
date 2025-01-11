@@ -1,8 +1,4 @@
-const assert = require("assert").strict;
 const expect = require("expect.js");
-const { JSDOM } = require("jsdom");
-const readFileSync = require("fs").readFileSync;
-const fs = require("fs");
 const existsSync = require("fs").existsSync;
 const isDev = require("../_data/isdevelopment")();
 /**
