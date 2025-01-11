@@ -1,4 +1,4 @@
-name: Publish to Cloudflare pages
+name: Publish main artifact
 on:
   push:
     branches: [ main ]
@@ -25,14 +25,6 @@ jobs:
           
       - run: npm install
       - run: npm run build
-
-      - name: Cloudflare Pages GitHub Action (Wrangler)
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./_site --project-name=blog
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
     
       - name: Upload deployment artifact
         uses: actions/upload-artifact@v4
