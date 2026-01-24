@@ -52,7 +52,7 @@
     "csso": "^5.0.5",
     "datauri": "^4.1.0",
     "expect.js": "^0.3.1",
-    "hasha": "^6.0.0",
+    "hasha": "^7.0.0",
     "html-minifier": "^4.0.0",
     "image-size": "^1.2.1",
     "jimp": "^1.6.0",
