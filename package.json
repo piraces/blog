@@ -33,7 +33,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "file-type": "^21.3.0",
     "fs-extra": "^11.3.3",
-    "jsdom": "^26.1.0",
+    "jsdom": "^27.4.0",
     "luxon": "^3.6.1",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
