@@ -55,7 +55,7 @@
     "hasha": "^7.0.0",
     "html-minifier": "^4.0.0",
     "image-size": "^1.2.1",
-    "jimp": "^1.6.0",
+    "jimp": "^1.6.1",
     "lru-cache": "^11.3.2",
     "phin": "^3.7.1",
     "purge-from-html": "^1.0.3",
