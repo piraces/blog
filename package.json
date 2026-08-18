@@ -31,7 +31,7 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
     "@rollup/plugin-terser": "^1.0.0",
-    "file-type": "^22.0.1",
+    "file-type": "^22.0.2",
     "fs-extra": "^11.4.0",
     "jsdom": "^29.1.1",
     "luxon": "^3.6.1",
